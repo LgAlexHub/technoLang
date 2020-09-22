@@ -24,5 +24,5 @@ for lng in mapPerCountry:
     
 files.close()
 p = open ("models.json","w")
-p.write(json.dumps(res,indent=2,ensure_ascii=False))
+p.write(json.dumps(res,indent=2,ensure_ascii=True))
 p.close()
