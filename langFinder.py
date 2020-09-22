@@ -38,9 +38,24 @@ def diagnostic_langue(text):
     return verify_sorted[0][1]
 
       
- 
+def __precision():
+    test_dictionnary={}
+    for path in glob.glob("*/en/appr/*"):
+        _,lang,corpus,filename = re.split("/",path)
+        res = diagnostic_langue(text_finder(path))
+        if res == lang:
+            if corpus in test_dictionnary:
+                test_dictionnary[corpus]=["vrai-postif"]=test_dictionnary[corpus]["vrai-postif"]+1
+            else:
+                test_dictionnary[corpus]=["vrai-postif"]=1
+        else:
+            if corpus in test_dictionnary:
+                test_dictionnary[corpus]=["faux-postif"]=test_dictionnary[corpus]["vrai-postif"]+1
+            else:
+                test_dictionnary[corpus]=["faux-postif"]=1
+
+#On essaye avec tout les documents d'une langue
 
 
-for path in glob.glob("*/it/appr/*"):
-       print(diagnostic_langue(text_finder(path)))
+__precision()
 #print(diagnostic_langue(text_finder("corpus_multi/en/appr/2009-01-14_celex_IP-09-48.en.html")))
