@@ -1,8 +1,9 @@
 import glob 
 import re 
 import json 
+
 print("===Importation du models.json===")
-jsonDictionnary = open("models.json","r")
+jsonDictionnary = open("ModelsGrams/models.json","r")
 jsonContent = json.load(jsonDictionnary)
 def text_finder(path):
     file = open(path)
@@ -10,7 +11,6 @@ def text_finder(path):
 
 
 def diagnostic_langue(text):
-
     dictionnary = {}
     chaine_split = text.split()
     #print("===Parsage du fichier d'apprentissage dans le dictionnaire===")

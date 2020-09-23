@@ -1,0 +1,112 @@
+{
+  "el": {
+    "vraiPositif": 41, 
+    "fauxNegatif": 15
+  }, 
+  "en": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "it": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "cs": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "et": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "es": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "nl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pt": {
+    "vraiPositif": 50, 
+    "fauxNegatif": 6
+  }, 
+  "lv": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "lt": {
+    "vraiPositif": 44, 
+    "fauxNegatif": 12
+  }, 
+  "ro": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "pl": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "fr": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "bg": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "de": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "da": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "fi": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "hu": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "sv": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "sk": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "mt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.7321428571428571)
+('en', ' rappel : ', 0.9285714285714286)
+('it', ' rappel : ', 0.9821428571428571)
+('cs', ' rappel : ', 0.8035714285714286)
+('et', ' rappel : ', 0.8392857142857143)
+('es', ' rappel : ', 0.9464285714285714)
+('nl', ' rappel : ', 0.9821428571428571)
+('pt', ' rappel : ', 0.8928571428571429)
+('lv', ' rappel : ', 0.6964285714285714)
+('lt', ' rappel : ', 0.7857142857142857)
+('ro', ' rappel : ', 0.6964285714285714)
+('pl', ' rappel : ', 0.9285714285714286)
+('fr', ' rappel : ', 0.9642857142857143)
+('bg', ' rappel : ', 0.9107142857142857)
+('de', ' rappel : ', 0.9107142857142857)
+('da', ' rappel : ', 0.8571428571428571)
+('fi', ' rappel : ', 0.7678571428571429)
+('hu', ' rappel : ', 0.8035714285714286)
+('sv', ' rappel : ', 0.8035714285714286)
+('sk', ' rappel : ', 0.7678571428571429)
+('mt', ' rappel : ', 0.9642857142857143)
+('sl', ' rappel : ', 0.9821428571428571)

@@ -1,0 +1,1831 @@
+#test avec : 
+    - 1 caractere : peu concluant , aucune détection sérieuse
+    - 2 caracteres : deja meilleur resultat , certaines langues sont bien detecte mais pas toute 
+    - 3 caracteres : ('de', ' rappel : ', 0.23214285714285715) ('da', ' rappel : ', 0.5178571428571429)('en', ' rappel : ', 0.5714285714285714)
+                    appart pour ses 3 langues les resultats de rappel sont tres bons
+    - 4 caracteres : ('da', ' rappel : ', 0.5892857142857143) ('en', ' rappel : ', 0.6964285714285714) 
+                    toujours deux langues en detection moyenne mais deja en evolution par rapport a avant 
+    - 5 caracteres : de tres tres bon resultat toutes les langues sont detectes a plus de 90 pourcent 
+    - 6 caracteres : de tres tres bon resultat toutes les langues sont detectes a plus de 95 pourcent 
+    - 7 caracteres : de tres tres bon resultat toutes les langues sont detectes a plus de 96 pourcent 
+    - 8 caracteres : net diminution des resultats ! 
+    - 9 caracteres : erreur de l'algo impossible d'avoir des resultats
+
+
+    - on en deduit que les modeles  a 6 et 7 caracteres est le meilleurs 
+{
+  "el": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "en": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "it": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "cs": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "et": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "es": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "nl": {
+    "vraiPositif": 1, 
+    "fauxNegatif": 55
+  }, 
+  "pt": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "lv": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "lt": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "ro": {
+    "vraiPositif": 1, 
+    "fauxNegatif": 55
+  }, 
+  "pl": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "fr": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "bg": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "de": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "da": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "fi": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "hu": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "sv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sk": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "mt": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "sl": {
+    "vraiPositif": 20, 
+    "fauxNegatif": 36
+  }
+}
+('el', ' rappel : ', 0.0)
+('en', ' rappel : ', 0.0)
+('it', ' rappel : ', 0.0)
+('cs', ' rappel : ', 0.0)
+('et', ' rappel : ', 0.0)
+('es', ' rappel : ', 0.0)
+('nl', ' rappel : ', 0.017857142857142856)
+('pt', ' rappel : ', 0.0)
+('lv', ' rappel : ', 0.0)
+('lt', ' rappel : ', 0.0)
+('ro', ' rappel : ', 0.017857142857142856)
+('pl', ' rappel : ', 0.0)
+('fr', ' rappel : ', 0.0)
+('bg', ' rappel : ', 0.0)
+('de', ' rappel : ', 0.0)
+('da', ' rappel : ', 0.0)
+('fi', ' rappel : ', 0.0)
+('hu', ' rappel : ', 0.0)
+('sv', ' rappel : ', 0.9821428571428571)
+('sk', ' rappel : ', 0.0)
+('mt', ' rappel : ', 0.0)
+('sl', ' rappel : ', 0.35714285714285715)
+{
+  "el": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "en": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "it": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "cs": {
+    "vraiPositif": 6, 
+    "fauxNegatif": 50
+  }, 
+  "et": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "es": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "nl": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "pt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "lv": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "lt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fr": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "bg": {
+    "vraiPositif": 49, 
+    "fauxNegatif": 7
+  }, 
+  "de": {
+    "vraiPositif": 7, 
+    "fauxNegatif": 49
+  }, 
+  "da": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "fi": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "hu": {
+    "vraiPositif": 42, 
+    "fauxNegatif": 14
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "mt": {
+    "vraiPositif": 25, 
+    "fauxNegatif": 31
+  }, 
+  "sl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }
+}
+('el', ' rappel : ', 0.8571428571428571)
+('en', ' rappel : ', 0.8571428571428571)
+('it', ' rappel : ', 0.9821428571428571)
+('cs', ' rappel : ', 0.10714285714285714)
+('et', ' rappel : ', 0.9464285714285714)
+('es', ' rappel : ', 0.9642857142857143)
+('nl', ' rappel : ', 0.7678571428571429)
+('pt', ' rappel : ', 0.9642857142857143)
+('lv', ' rappel : ', 0.9642857142857143)
+('lt', ' rappel : ', 0.9821428571428571)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 0.9821428571428571)
+('fr', ' rappel : ', 0.9821428571428571)
+('bg', ' rappel : ', 0.875)
+('de', ' rappel : ', 0.125)
+('da', ' rappel : ', 0.8392857142857143)
+('fi', ' rappel : ', 0.9464285714285714)
+('hu', ' rappel : ', 0.75)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.8392857142857143)
+('mt', ' rappel : ', 0.44642857142857145)
+('sl', ' rappel : ', 0.9642857142857143)
+{
+  "el": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "en": {
+    "vraiPositif": 32, 
+    "fauxNegatif": 24
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "et": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "es": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "fr": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "bg": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "de": {
+    "vraiPositif": 13, 
+    "fauxNegatif": 43
+  }, 
+  "da": {
+    "vraiPositif": 29, 
+    "fauxNegatif": 27
+  }, 
+  "fi": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "hu": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "mt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "sl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }
+}
+('el', ' rappel : ', 0.9464285714285714)
+('en', ' rappel : ', 0.5714285714285714)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9107142857142857)
+('et', ' rappel : ', 0.8571428571428571)
+('es', ' rappel : ', 0.9642857142857143)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 1.0)
+('lv', ' rappel : ', 1.0)
+('lt', ' rappel : ', 1.0)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 1.0)
+('fr', ' rappel : ', 0.9821428571428571)
+('bg', ' rappel : ', 0.9285714285714286)
+('de', ' rappel : ', 0.23214285714285715)
+('da', ' rappel : ', 0.5178571428571429)
+('fi', ' rappel : ', 0.9464285714285714)
+('hu', ' rappel : ', 0.8392857142857143)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.9821428571428571)
+('mt', ' rappel : ', 0.9642857142857143)
+('sl', ' rappel : ', 0.9642857142857143)
+{
+  "el": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "en": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "it": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "cs": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "et": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "es": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "nl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fr": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "bg": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "de": {
+    "vraiPositif": 46, 
+    "fauxNegatif": 10
+  }, 
+  "da": {
+    "vraiPositif": 33, 
+    "fauxNegatif": 23
+  }, 
+  "fi": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "hu": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sk": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "mt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.9642857142857143)
+('en', ' rappel : ', 0.6964285714285714)
+('it', ' rappel : ', 0.9642857142857143)
+('cs', ' rappel : ', 0.9642857142857143)
+('et', ' rappel : ', 0.9464285714285714)
+('es', ' rappel : ', 0.9642857142857143)
+('nl', ' rappel : ', 0.9821428571428571)
+('pt', ' rappel : ', 0.9821428571428571)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 0.9642857142857143)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 0.9821428571428571)
+('fr', ' rappel : ', 0.9642857142857143)
+('bg', ' rappel : ', 0.9642857142857143)
+('de', ' rappel : ', 0.8214285714285714)
+('da', ' rappel : ', 0.5892857142857143)
+('fi', ' rappel : ', 0.9464285714285714)
+('hu', ' rappel : ', 0.9821428571428571)
+('sv', ' rappel : ', 0.9821428571428571)
+('sk', ' rappel : ', 0.9642857142857143)
+('mt', ' rappel : ', 0.9821428571428571)
+('sl', ' rappel : ', 0.9821428571428571)
+{
+  "el": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "en": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "et": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "es": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "ro": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "fr": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "bg": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "de": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "da": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fi": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "hu": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "mt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.9821428571428571)
+('en', ' rappel : ', 0.9285714285714286)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9642857142857143)
+('et', ' rappel : ', 0.9821428571428571)
+('es', ' rappel : ', 0.9821428571428571)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 1.0)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 1.0)
+('ro', ' rappel : ', 1.0)
+('pl', ' rappel : ', 1.0)
+('fr', ' rappel : ', 1.0)
+('bg', ' rappel : ', 0.9464285714285714)
+('de', ' rappel : ', 0.9642857142857143)
+('da', ' rappel : ', 0.9821428571428571)
+('fi', ' rappel : ', 0.9821428571428571)
+('hu', ' rappel : ', 1.0)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 1.0)
+('mt', ' rappel : ', 1.0)
+('sl', ' rappel : ', 0.9821428571428571)
+{
+  "el": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "en": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "et": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "es": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "ro": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fr": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "bg": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "de": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "da": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fi": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "hu": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "mt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.9642857142857143)
+('en', ' rappel : ', 1.0)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9464285714285714)
+('et', ' rappel : ', 0.9642857142857143)
+('es', ' rappel : ', 1.0)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 1.0)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 0.9821428571428571)
+('ro', ' rappel : ', 1.0)
+('pl', ' rappel : ', 0.9821428571428571)
+('fr', ' rappel : ', 1.0)
+('bg', ' rappel : ', 0.9642857142857143)
+('de', ' rappel : ', 0.9642857142857143)
+('da', ' rappel : ', 0.9821428571428571)
+('fi', ' rappel : ', 0.9821428571428571)
+('hu', ' rappel : ', 1.0)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.9821428571428571)
+('mt', ' rappel : ', 1.0)
+('sl', ' rappel : ', 0.9821428571428571)
+{
+  "el": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "en": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "et": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "es": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "fr": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "bg": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "de": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "da": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "fi": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "hu": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "mt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }
+}
+('el', ' rappel : ', 0.9821428571428571)
+('en', ' rappel : ', 0.9821428571428571)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9285714285714286)
+('et', ' rappel : ', 0.9642857142857143)
+('es', ' rappel : ', 1.0)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 0.9821428571428571)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 0.9821428571428571)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 0.9642857142857143)
+('fr', ' rappel : ', 1.0)
+('bg', ' rappel : ', 0.9464285714285714)
+('de', ' rappel : ', 0.9821428571428571)
+('da', ' rappel : ', 0.9464285714285714)
+('fi', ' rappel : ', 0.9642857142857143)
+('hu', ' rappel : ', 0.9821428571428571)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.9821428571428571)
+('mt', ' rappel : ', 0.9821428571428571)
+('sl', ' rappel : ', 0.9642857142857143)
+{
+  "el": {
+    "vraiPositif": 41, 
+    "fauxNegatif": 15
+  }, 
+  "en": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "it": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "cs": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "et": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "es": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "nl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pt": {
+    "vraiPositif": 50, 
+    "fauxNegatif": 6
+  }, 
+  "lv": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "lt": {
+    "vraiPositif": 44, 
+    "fauxNegatif": 12
+  }, 
+  "ro": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "pl": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "fr": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "bg": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "de": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "da": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "fi": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "hu": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "sv": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "sk": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "mt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.7321428571428571)
+('en', ' rappel : ', 0.9285714285714286)
+('it', ' rappel : ', 0.9821428571428571)
+('cs', ' rappel : ', 0.8035714285714286)
+('et', ' rappel : ', 0.8392857142857143)
+('es', ' rappel : ', 0.9464285714285714)
+('nl', ' rappel : ', 0.9821428571428571)
+('pt', ' rappel : ', 0.8928571428571429)
+('lv', ' rappel : ', 0.6964285714285714)
+('lt', ' rappel : ', 0.7857142857142857)
+('ro', ' rappel : ', 0.6964285714285714)
+('pl', ' rappel : ', 0.9285714285714286)
+('fr', ' rappel : ', 0.9642857142857143)
+('bg', ' rappel : ', 0.9107142857142857)
+('de', ' rappel : ', 0.9107142857142857)
+('da', ' rappel : ', 0.8571428571428571)
+('fi', ' rappel : ', 0.7678571428571429)
+('hu', ' rappel : ', 0.8035714285714286)
+('sv', ' rappel : ', 0.8035714285714286)
+('sk', ' rappel : ', 0.7678571428571429)
+('mt', ' rappel : ', 0.9642857142857143)
+('sl', ' rappel : ', 0.9821428571428571)
+Traceback (most recent call last):
+  File "./function/nGrammeFinder.py", line 65, in <module>
+    __precision(int(sys.argv[1]))
+  File "./function/nGrammeFinder.py", line 52, in __precision
+    res = diagnostic_langue_str(text_finder(path),N)
+  File "./function/nGrammeFinder.py", line 41, in diagnostic_langue_str
+    return verify_sorted[0][1]
+IndexError: list index out of rangeresGramme1.txt
+{
+  "el": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "en": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "it": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "cs": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "et": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "es": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "nl": {
+    "vraiPositif": 1, 
+    "fauxNegatif": 55
+  }, 
+  "pt": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "lv": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "lt": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "ro": {
+    "vraiPositif": 1, 
+    "fauxNegatif": 55
+  }, 
+  "pl": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "fr": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "bg": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "de": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "da": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "fi": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "hu": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "sv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sk": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "mt": {
+    "vraiPositif": 0, 
+    "fauxNegatif": 56
+  }, 
+  "sl": {
+    "vraiPositif": 20, 
+    "fauxNegatif": 36
+  }
+}
+('el', ' rappel : ', 0.0)
+('en', ' rappel : ', 0.0)
+('it', ' rappel : ', 0.0)
+('cs', ' rappel : ', 0.0)
+('et', ' rappel : ', 0.0)
+('es', ' rappel : ', 0.0)
+('nl', ' rappel : ', 0.017857142857142856)
+('pt', ' rappel : ', 0.0)
+('lv', ' rappel : ', 0.0)
+('lt', ' rappel : ', 0.0)
+('ro', ' rappel : ', 0.017857142857142856)
+('pl', ' rappel : ', 0.0)
+('fr', ' rappel : ', 0.0)
+('bg', ' rappel : ', 0.0)
+('de', ' rappel : ', 0.0)
+('da', ' rappel : ', 0.0)
+('fi', ' rappel : ', 0.0)
+('hu', ' rappel : ', 0.0)
+('sv', ' rappel : ', 0.9821428571428571)
+('sk', ' rappel : ', 0.0)
+('mt', ' rappel : ', 0.0)
+('sl', ' rappel : ', 0.35714285714285715)
+resGramme2.txt
+{
+  "el": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "en": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "it": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "cs": {
+    "vraiPositif": 6, 
+    "fauxNegatif": 50
+  }, 
+  "et": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "es": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "nl": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "pt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "lv": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "lt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fr": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "bg": {
+    "vraiPositif": 49, 
+    "fauxNegatif": 7
+  }, 
+  "de": {
+    "vraiPositif": 7, 
+    "fauxNegatif": 49
+  }, 
+  "da": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "fi": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "hu": {
+    "vraiPositif": 42, 
+    "fauxNegatif": 14
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "mt": {
+    "vraiPositif": 25, 
+    "fauxNegatif": 31
+  }, 
+  "sl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }
+}
+('el', ' rappel : ', 0.8571428571428571)
+('en', ' rappel : ', 0.8571428571428571)
+('it', ' rappel : ', 0.9821428571428571)
+('cs', ' rappel : ', 0.10714285714285714)
+('et', ' rappel : ', 0.9464285714285714)
+('es', ' rappel : ', 0.9642857142857143)
+('nl', ' rappel : ', 0.7678571428571429)
+('pt', ' rappel : ', 0.9642857142857143)
+('lv', ' rappel : ', 0.9642857142857143)
+('lt', ' rappel : ', 0.9821428571428571)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 0.9821428571428571)
+('fr', ' rappel : ', 0.9821428571428571)
+('bg', ' rappel : ', 0.875)
+('de', ' rappel : ', 0.125)
+('da', ' rappel : ', 0.8392857142857143)
+('fi', ' rappel : ', 0.9464285714285714)
+('hu', ' rappel : ', 0.75)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.8392857142857143)
+('mt', ' rappel : ', 0.44642857142857145)
+('sl', ' rappel : ', 0.9642857142857143)
+resGramme3.txt
+{
+  "el": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "en": {
+    "vraiPositif": 32, 
+    "fauxNegatif": 24
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "et": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "es": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "fr": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "bg": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "de": {
+    "vraiPositif": 13, 
+    "fauxNegatif": 43
+  }, 
+  "da": {
+    "vraiPositif": 29, 
+    "fauxNegatif": 27
+  }, 
+  "fi": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "hu": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "mt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "sl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }
+}
+('el', ' rappel : ', 0.9464285714285714)
+('en', ' rappel : ', 0.5714285714285714)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9107142857142857)
+('et', ' rappel : ', 0.8571428571428571)
+('es', ' rappel : ', 0.9642857142857143)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 1.0)
+('lv', ' rappel : ', 1.0)
+('lt', ' rappel : ', 1.0)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 1.0)
+('fr', ' rappel : ', 0.9821428571428571)
+('bg', ' rappel : ', 0.9285714285714286)
+('de', ' rappel : ', 0.23214285714285715)
+('da', ' rappel : ', 0.5178571428571429)
+('fi', ' rappel : ', 0.9464285714285714)
+('hu', ' rappel : ', 0.8392857142857143)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.9821428571428571)
+('mt', ' rappel : ', 0.9642857142857143)
+('sl', ' rappel : ', 0.9642857142857143)
+resGramme4.txt
+{
+  "el": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "en": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "it": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "cs": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "et": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "es": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "nl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fr": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "bg": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "de": {
+    "vraiPositif": 46, 
+    "fauxNegatif": 10
+  }, 
+  "da": {
+    "vraiPositif": 33, 
+    "fauxNegatif": 23
+  }, 
+  "fi": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "hu": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sk": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "mt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.9642857142857143)
+('en', ' rappel : ', 0.6964285714285714)
+('it', ' rappel : ', 0.9642857142857143)
+('cs', ' rappel : ', 0.9642857142857143)
+('et', ' rappel : ', 0.9464285714285714)
+('es', ' rappel : ', 0.9642857142857143)
+('nl', ' rappel : ', 0.9821428571428571)
+('pt', ' rappel : ', 0.9821428571428571)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 0.9642857142857143)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 0.9821428571428571)
+('fr', ' rappel : ', 0.9642857142857143)
+('bg', ' rappel : ', 0.9642857142857143)
+('de', ' rappel : ', 0.8214285714285714)
+('da', ' rappel : ', 0.5892857142857143)
+('fi', ' rappel : ', 0.9464285714285714)
+('hu', ' rappel : ', 0.9821428571428571)
+('sv', ' rappel : ', 0.9821428571428571)
+('sk', ' rappel : ', 0.9642857142857143)
+('mt', ' rappel : ', 0.9821428571428571)
+('sl', ' rappel : ', 0.9821428571428571)
+resGramme5.txt
+{
+  "el": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "en": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "et": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "es": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "ro": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "fr": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "bg": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "de": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "da": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fi": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "hu": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "mt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.9821428571428571)
+('en', ' rappel : ', 0.9285714285714286)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9642857142857143)
+('et', ' rappel : ', 0.9821428571428571)
+('es', ' rappel : ', 0.9821428571428571)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 1.0)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 1.0)
+('ro', ' rappel : ', 1.0)
+('pl', ' rappel : ', 1.0)
+('fr', ' rappel : ', 1.0)
+('bg', ' rappel : ', 0.9464285714285714)
+('de', ' rappel : ', 0.9642857142857143)
+('da', ' rappel : ', 0.9821428571428571)
+('fi', ' rappel : ', 0.9821428571428571)
+('hu', ' rappel : ', 1.0)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 1.0)
+('mt', ' rappel : ', 1.0)
+('sl', ' rappel : ', 0.9821428571428571)
+resGramme6.txt
+{
+  "el": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "en": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "et": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "es": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "ro": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fr": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "bg": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "de": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "da": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "fi": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "hu": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "mt": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.9642857142857143)
+('en', ' rappel : ', 1.0)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9464285714285714)
+('et', ' rappel : ', 0.9642857142857143)
+('es', ' rappel : ', 1.0)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 1.0)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 0.9821428571428571)
+('ro', ' rappel : ', 1.0)
+('pl', ' rappel : ', 0.9821428571428571)
+('fr', ' rappel : ', 1.0)
+('bg', ' rappel : ', 0.9642857142857143)
+('de', ' rappel : ', 0.9642857142857143)
+('da', ' rappel : ', 0.9821428571428571)
+('fi', ' rappel : ', 0.9821428571428571)
+('hu', ' rappel : ', 1.0)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.9821428571428571)
+('mt', ' rappel : ', 1.0)
+('sl', ' rappel : ', 0.9821428571428571)
+resGramme7.txt
+{
+  "el": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "en": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "it": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "cs": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "et": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "es": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "nl": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "pt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lv": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "lt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "ro": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "fr": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "bg": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "de": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "da": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "fi": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "hu": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sv": {
+    "vraiPositif": 56, 
+    "fauxNegatif": 0
+  }, 
+  "sk": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "mt": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "sl": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }
+}
+('el', ' rappel : ', 0.9821428571428571)
+('en', ' rappel : ', 0.9821428571428571)
+('it', ' rappel : ', 1.0)
+('cs', ' rappel : ', 0.9285714285714286)
+('et', ' rappel : ', 0.9642857142857143)
+('es', ' rappel : ', 1.0)
+('nl', ' rappel : ', 1.0)
+('pt', ' rappel : ', 0.9821428571428571)
+('lv', ' rappel : ', 0.9821428571428571)
+('lt', ' rappel : ', 0.9821428571428571)
+('ro', ' rappel : ', 0.9821428571428571)
+('pl', ' rappel : ', 0.9642857142857143)
+('fr', ' rappel : ', 1.0)
+('bg', ' rappel : ', 0.9464285714285714)
+('de', ' rappel : ', 0.9821428571428571)
+('da', ' rappel : ', 0.9464285714285714)
+('fi', ' rappel : ', 0.9642857142857143)
+('hu', ' rappel : ', 0.9821428571428571)
+('sv', ' rappel : ', 1.0)
+('sk', ' rappel : ', 0.9821428571428571)
+('mt', ' rappel : ', 0.9821428571428571)
+('sl', ' rappel : ', 0.9642857142857143)
+resGramme8.txt
+{
+  "el": {
+    "vraiPositif": 41, 
+    "fauxNegatif": 15
+  }, 
+  "en": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "it": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "cs": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "et": {
+    "vraiPositif": 47, 
+    "fauxNegatif": 9
+  }, 
+  "es": {
+    "vraiPositif": 53, 
+    "fauxNegatif": 3
+  }, 
+  "nl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }, 
+  "pt": {
+    "vraiPositif": 50, 
+    "fauxNegatif": 6
+  }, 
+  "lv": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "lt": {
+    "vraiPositif": 44, 
+    "fauxNegatif": 12
+  }, 
+  "ro": {
+    "vraiPositif": 39, 
+    "fauxNegatif": 17
+  }, 
+  "pl": {
+    "vraiPositif": 52, 
+    "fauxNegatif": 4
+  }, 
+  "fr": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "bg": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "de": {
+    "vraiPositif": 51, 
+    "fauxNegatif": 5
+  }, 
+  "da": {
+    "vraiPositif": 48, 
+    "fauxNegatif": 8
+  }, 
+  "fi": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "hu": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "sv": {
+    "vraiPositif": 45, 
+    "fauxNegatif": 11
+  }, 
+  "sk": {
+    "vraiPositif": 43, 
+    "fauxNegatif": 13
+  }, 
+  "mt": {
+    "vraiPositif": 54, 
+    "fauxNegatif": 2
+  }, 
+  "sl": {
+    "vraiPositif": 55, 
+    "fauxNegatif": 1
+  }
+}
+('el', ' rappel : ', 0.7321428571428571)
+('en', ' rappel : ', 0.9285714285714286)
+('it', ' rappel : ', 0.9821428571428571)
+('cs', ' rappel : ', 0.8035714285714286)
+('et', ' rappel : ', 0.8392857142857143)
+('es', ' rappel : ', 0.9464285714285714)
+('nl', ' rappel : ', 0.9821428571428571)
+('pt', ' rappel : ', 0.8928571428571429)
+('lv', ' rappel : ', 0.6964285714285714)
+('lt', ' rappel : ', 0.7857142857142857)
+('ro', ' rappel : ', 0.6964285714285714)
+('pl', ' rappel : ', 0.9285714285714286)
+('fr', ' rappel : ', 0.9642857142857143)
+('bg', ' rappel : ', 0.9107142857142857)
+('de', ' rappel : ', 0.9107142857142857)
+('da', ' rappel : ', 0.8571428571428571)
+('fi', ' rappel : ', 0.7678571428571429)
+('hu', ' rappel : ', 0.8035714285714286)
+('sv', ' rappel : ', 0.8035714285714286)
+('sk', ' rappel : ', 0.7678571428571429)
+('mt', ' rappel : ', 0.9642857142857143)
+('sl', ' rappel : ', 0.9821428571428571)
+resGramme9.txt
+Traceback (most recent call last):
+  File "./function/nGrammeFinder.py", line 65, in <module>
+    __precision(int(sys.argv[1]))
+  File "./function/nGrammeFinder.py", line 52, in __precision
+    res = diagnostic_langue_str(text_finder(path),N)
+  File "./function/nGrammeFinder.py", line 41, in diagnostic_langue_str
+    return verify_sorted[0][1]
+IndexError: list index out of range
