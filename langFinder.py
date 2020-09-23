@@ -59,7 +59,8 @@ def __precision():
        
         
 def diagnostic_langue_str(text,N=3):
-    
+    dictionnary = {}
+    chaine_split = text.split()
     
         
 
