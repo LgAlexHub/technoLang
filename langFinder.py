@@ -13,7 +13,7 @@ def diagnostic_langue(text):
 
     dictionnary = {}
     chaine_split = text.split()
-    print("===Parsage du fichier d'apprentissage dans le dictionnaire===")
+    #print("===Parsage du fichier d'apprentissage dans le dictionnaire===")
     for word in chaine_split:
         if word.lower() in dictionnary:
             dictionnary[word.lower()] = dictionnary[word.lower()] + 1
@@ -40,19 +40,20 @@ def diagnostic_langue(text):
       
 def __precision():
     test_dictionnary={}
-    for path in glob.glob("*/en/appr/*"):
+    for path in glob.glob("*/*/appr/*"):
         _,lang,corpus,filename = re.split("/",path)
+        print(path)
         res = diagnostic_langue(text_finder(path))
-        if res == lang:
-            if corpus in test_dictionnary:
-                test_dictionnary[corpus]=["vrai-postif"]=test_dictionnary[corpus]["vrai-postif"]+1
-            else:
-                test_dictionnary[corpus]=["vrai-postif"]=1
-        else:
-            if corpus in test_dictionnary:
-                test_dictionnary[corpus]=["faux-postif"]=test_dictionnary[corpus]["vrai-postif"]+1
-            else:
-                test_dictionnary[corpus]=["faux-postif"]=1
+        if lang not in test_dictionnary:
+            test_dictionnary[lang]={}
+            test_dictionnary[lang]["vraiPositif"]=0
+            test_dictionnary[lang]["vraiNegatif"]=0
+        if lang == res : 
+            test_dictionnary[lang]["vraiPositif"]=test_dictionnary[lang]["vraiPositif"]+1
+        else :
+             test_dictionnary[lang]["vraiNegatif"]=test_dictionnary[lang]["vraiNegatif"]+1
+    print(test_dictionnary)
+        
 
 #On essaye avec tout les documents d'une langue
 
