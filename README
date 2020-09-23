@@ -1,14 +1,4 @@
-Pour exécuter l'exercie numéro 1. 
-# Posséder python 
-# Ouvrir un terminal de commande 
-# Se positionner dans le dossier avec le terminal 
-# Exécuter la commande suivante : << python ./langFinder.py >>
-# Pour récuperer notre trace d'exécution : <<python ./langFinder.py > nom_de_fichier.txt
-=== Information === 
-
-# La fonction text_finder renvoie le contenu d'un texte dont le chemin est passé en paramètre
-  et décode le tout en utf-8
-# La fonction diagnostic_lang prend un text en paramètre regarde et classe les mots les plus 
-  plus utilisés puis compare avec les mots les plus utilisés de notre models.json pour renvoyer
-  une langue si elle trouve 
-# La fonction __precision ne prend rien en paramètre mais fait tourner notre fonction 	     diagnostic_lang sur tout les chemins disponible dans corpus_multi et regarde le nombre de     vrai positif et négatif 
+===Pour executer exo 3===
+#Positionez votre terminal au chemin suivant : << ~/function/ >>
+#executez la commande suivante : << py ./nGrammeFinder.py 3>>
+	/!\ Important de ne pas oublier le paramètre 3 car vous ne possédez pas les autres modèles /!\
