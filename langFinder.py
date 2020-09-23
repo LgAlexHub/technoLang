@@ -40,9 +40,9 @@ def diagnostic_langue(text):
       
 def __precision():
     test_dictionnary={}
-    for path in glob.glob("*/*/appr/*"):
+    for path in glob.glob("corpus_multi/*/appr/*"):
         _,lang,corpus,filename = re.split("/",path)
-        print(path)
+        #print(path)
         res = diagnostic_langue(text_finder(path))
         if lang not in test_dictionnary:
             test_dictionnary[lang]={}
@@ -52,11 +52,21 @@ def __precision():
             test_dictionnary[lang]["vraiPositif"]=test_dictionnary[lang]["vraiPositif"]+1
         else :
              test_dictionnary[lang]["vraiNegatif"]=test_dictionnary[lang]["vraiNegatif"]+1
-    print(test_dictionnary)
+    
+    print(json.dumps(test_dictionnary,indent=2,ensure_ascii=False))         
+
+    
+       
+        
+def diagnostic_langue_str(text,N=3):
+    
+    
         
 
 #On essaye avec tout les documents d'une langue
 
-
+#a executer pour avoir une trace des touts les vrais positif et negatif du corpus 
 __precision()
+
+#a lancer pour voir le resultat d'un seul fichier
 #print(diagnostic_langue(text_finder("corpus_multi/en/appr/2009-01-14_celex_IP-09-48.en.html")))

@@ -1,0 +1,91 @@
+
+{
+  "el": {
+    "vraiNegatif": 2, 
+    "vraiPositif": 214
+  }, 
+  "en": {
+    "vraiNegatif": 0, 
+    "vraiPositif": 216
+  }, 
+  "it": {
+    "vraiNegatif": 1, 
+    "vraiPositif": 215
+  }, 
+  "cs": {
+    "vraiNegatif": 13, 
+    "vraiPositif": 203
+  }, 
+  "et": {
+    "vraiNegatif": 18, 
+    "vraiPositif": 198
+  }, 
+  "es": {
+    "vraiNegatif": 5, 
+    "vraiPositif": 211
+  }, 
+  "nl": {
+    "vraiNegatif": 1, 
+    "vraiPositif": 215
+  }, 
+  "pt": {
+    "vraiNegatif": 2, 
+    "vraiPositif": 214
+  }, 
+  "lv": {
+    "vraiNegatif": 5, 
+    "vraiPositif": 211
+  }, 
+  "lt": {
+    "vraiNegatif": 4, 
+    "vraiPositif": 212
+  }, 
+  "ro": {
+    "vraiNegatif": 2, 
+    "vraiPositif": 214
+  }, 
+  "pl": {
+    "vraiNegatif": 1, 
+    "vraiPositif": 215
+  }, 
+  "fr": {
+    "vraiNegatif": 4, 
+    "vraiPositif": 212
+  }, 
+  "bg": {
+    "vraiNegatif": 2, 
+    "vraiPositif": 214
+  }, 
+  "de": {
+    "vraiNegatif": 6, 
+    "vraiPositif": 210
+  }, 
+  "da": {
+    "vraiNegatif": 3, 
+    "vraiPositif": 213
+  }, 
+  "fi": {
+    "vraiNegatif": 2, 
+    "vraiPositif": 214
+  }, 
+  "hu": {
+    "vraiNegatif": 1, 
+    "vraiPositif": 215
+  }, 
+  "sv": {
+    "vraiNegatif": 2, 
+    "vraiPositif": 214
+  }, 
+  "sk": {
+    "vraiNegatif": 4, 
+    "vraiPositif": 212
+  }, 
+  "mt": {
+    "vraiNegatif": 10, 
+    "vraiPositif": 206
+  }, 
+  "sl": {
+    "vraiNegatif": 1, 
+    "vraiPositif": 215
+  }
+}
