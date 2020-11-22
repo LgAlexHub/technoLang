@@ -1,6 +1,6 @@
 #Fonctionnement du script des dictionnaires 
-    ##1) Lancer un invite de commande et se placer à la racine du dossier
-    ##2) Selon le mode de fonctionnement que vous voulez utiliser veuillez saisir : 
+##1) Lancer un invite de commande et se placer à la racine du dossier
+##2) Selon le mode de fonctionnement que vous voulez utiliser veuillez saisir : 
         2.1) Pour nltk 
             #2.1.a) python3 ./script.py nltk <Numéro du texte du corpus> <Nom du json sortant>
         2.2) Pour spacy 
