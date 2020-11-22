@@ -1,3 +1,11 @@
+#Project jsonParserForNltkSpacy
+
+#Table des matières 
+* [Team Members](#team-members)
+
+# <a name="team-members></a>Team Members
+        *"Alexis Legras 21801364" <21801364@etu.unicaen.fr>
+        
 #Fonctionnement du script des dictionnaires 
 ##1) Lancer un invite de commande et se placer à la racine du dossier
 ##2) Selon le mode de fonctionnement que vous voulez utiliser veuillez saisir : 
