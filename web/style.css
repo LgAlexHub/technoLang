@@ -31,6 +31,17 @@ th {
     grid-gap: 10px;
 }
 
+.nav{
+  display : grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr;
+  justify-content: space-around ;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-gap: 10px;
+}
+
 .nav ul{
   list-style-type:none ;
  
