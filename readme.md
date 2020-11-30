@@ -1,8 +1,11 @@
 #Projet moteur de recherche
-###Auteur : 21801364
 
-####Lancer le serveur web
-######Liste des dépendances python3 :
+##Auteur : 21801364
+
+
+###Lancer le serveur web
+
+#####Liste des dépendances python3 :
 * pandas
 * sklearn
 * json
