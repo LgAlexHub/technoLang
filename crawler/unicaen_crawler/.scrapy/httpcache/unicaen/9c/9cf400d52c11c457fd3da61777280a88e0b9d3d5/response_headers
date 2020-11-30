@@ -1,0 +1,6 @@
+Server: Apache-Coyote/1.1
+Set-Cookie: JSESSIONID="D4FD01875E59C7C787DEF6377DEBDDC7.apd02.eu01.prod.alma.dc03.hosted.exlibrisgroup.com:1801"; Version=1; Path=/; HttpOnly
+X-Frame-Options: SAMEORIGIN
+Location: mng/login
+Content-Type: text/html
+Date: Thu, 26 Nov 2020 17:07:13 GMT

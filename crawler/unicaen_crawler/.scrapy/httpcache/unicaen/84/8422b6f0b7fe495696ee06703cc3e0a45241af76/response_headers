@@ -1,0 +1,9 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:27:14 GMT
+Content-Type: text/html
+Last-Modified: Wed, 13 May 2020 10:05:09 GMT
+Etag: "834-5a584b7168535-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Access-Control-Allow-Origin: *

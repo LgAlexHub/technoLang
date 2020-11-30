@@ -1,0 +1,8 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:48:43 GMT
+Content-Type: text/html; charset=UTF-8
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=15768000;includeSubdomains

@@ -1,0 +1,175 @@
+
+<script language="JavaScript">
+    function generateAdresse(name, domaine) {
+        document.write("<a href=" + "mail" + "to:" + name + "@" + domaine + ">" + name + "@"+ domaine + "</a>");
+    }
+</script>
+
+<!DOCTYPE html><html lang="fr">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1.0">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE&#x3D;edge,chrome&#x3D;1">    <!-- Title -->
+    <title>An error occurred - Catalogue des services numériques</title>    <!-- Links -->
+    <link href="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;jquery-ui-1.11.4&#x2F;jquery-ui.min.css" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;jquery-ui-1.11.4&#x2F;jquery-ui.structure.min.css" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;jquery-ui-1.11.4&#x2F;jquery-ui.theme.min.css" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;bootstrap-3.3.5&#x2F;css&#x2F;bootstrap.min.css" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;bootstrap-3.3.5&#x2F;css&#x2F;bootstrap-theme.min.css" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;unicaen&#x2F;app&#x2F;css&#x2F;unicaen.css&#x3F;v&#x3D;2.0.3" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;css&#x2F;app.css&#x3F;v&#x3D;2.0.3" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;vendor&#x2F;fontawesome-free-5.11.2-web&#x2F;css&#x2F;all.css&#x3F;v&#x3D;2.0.3" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;vendor&#x2F;bootstrap-select-1.13.2&#x2F;dist&#x2F;css&#x2F;bootstrap-select.min.css&#x3F;v&#x3D;2.0.3" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;css&#x2F;icon.css&#x3F;v&#x3D;2.0.3" media="all" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;&#x2F;www.unicaen.fr&#x2F;images&#x2F;favicon.ico" rel="shortcut&#x20;icon" type="image&#x2F;vnd.microsoft.icon">    <!-- Scripts -->
+    <script type="text&#x2F;javascript" src="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;jquery-1.11.3.min.js"></script>
+<script type="text&#x2F;javascript" src="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;jquery-ui-1.11.4&#x2F;jquery-ui.min.js"></script>
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//www.unicaen.fr/ksup-stats/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '69']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+
+<body class="production">
+<div id="navbar" class="navbar navbar-fixed-top" role="navigation">
+    <div id="navbar-here" class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                    <img src="/img/logo.png" alt="Logo UNICAEN" height="50px" style="float: left;" />
+                    <h1 class="title">
+                    <a class="title" href="/" >
+                        Catalogue des services numériques                    </a>
+                    </h1>
+        </div>
+        <div class="navbar-collapse bs-navbar-collapse collapse">
+            <ul class="nav&#x20;navbar-nav&#x20;menu-principal">
+    <li class="active">
+        <a title="Services" href="&#x2F;service">Services</a>
+    </li>
+</ul>            <p class="navbar-text navbar-right">
+                <a class="navbar-link" 
+   id="user-current-info" 
+   title="Utilisateur connecté à l'application" 
+   data-placement="bottom" 
+   data-toggle="popover" 
+   data-html="true" 
+   data-content="Aucun" 
+   href="#"><span class="glyphicon glyphicon-user"></span> <strong>Vous n'êtes pas connecté(e)</strong></a>
+ | <a class="navbar-link user-connection" href="/auth/connexion" title="Affiche le formulaire d'authentification">Connexion</a>            </p>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div id="contenu-principal" class="container" style="background-color: white;">
+
+            
+<h1>An error occurred</h1>
+<h2>An error occurred during execution; please try again later.</h2>
+
+
+            <hr/>
+        <h2>Information complémentaire:</h2>
+        <h3>Error</h3>
+        <dl>
+            <dt>Fichier:</dt>
+            <dd>
+                <pre class="prettyprint linenums">/var/www/html/module/ModuleService/src/ModuleService/Controller/FicheController.php:108</pre>
+            </dd>
+            <dt>Message:</dt>
+            <dd>
+                <pre class="prettyprint linenums">Call to a member function getService() on null</pre>
+            </dd>
+            <dt>Trace:</dt>
+            <dd>
+                <pre class="prettyprint linenums"><style> pre pre {padding:3px;font-size:8pt;background-color:white} </style><div style="white-space:nowrap;opacity:.5">0 /var/www/html/vendor/zendframework/zend-mvc/src/Controller/AbstractActionController.php <span class="badge">78</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>ModuleService\Controller\FicheController->afficherAction()</pre></div><div style="white-space:nowrap;opacity:.5">1 /var/www/html/vendor/zendframework/zend-eventmanager/src/EventManager.php <span class="badge">322</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>Zend\Mvc\Controller\AbstractActionController->onDispatch(Object(Zend\Mvc\MvcEvent))</pre></div><div style="white-space:nowrap;opacity:.5">2 /var/www/html/vendor/zendframework/zend-eventmanager/src/EventManager.php <span class="badge">179</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>Zend\EventManager\EventManager->triggerListeners(Object(Zend\Mvc\MvcEvent), Object(Closure))</pre></div><div style="white-space:nowrap;opacity:.5">3 /var/www/html/vendor/zendframework/zend-mvc/src/Controller/AbstractController.php <span class="badge">106</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>Zend\EventManager\EventManager->triggerEventUntil(Object(Closure), Object(Zend\Mvc\MvcEvent))</pre></div><div style="white-space:nowrap;opacity:.5">4 /var/www/html/vendor/zendframework/zend-mvc/src/DispatchListener.php <span class="badge">138</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>Zend\Mvc\Controller\AbstractController->dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))</pre></div><div style="white-space:nowrap;opacity:.5">5 /var/www/html/vendor/zendframework/zend-eventmanager/src/EventManager.php <span class="badge">322</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>Zend\Mvc\DispatchListener->onDispatch(Object(Zend\Mvc\MvcEvent))</pre></div><div style="white-space:nowrap;opacity:.5">6 /var/www/html/vendor/zendframework/zend-eventmanager/src/EventManager.php <span class="badge">179</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>Zend\EventManager\EventManager->triggerListeners(Object(Zend\Mvc\MvcEvent), Object(Closure))</pre></div><div style="white-space:nowrap;opacity:.5">7 /var/www/html/vendor/zendframework/zend-mvc/src/Application.php <span class="badge">332</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px;opacity:.5"><pre>Zend\EventManager\EventManager->triggerEventUntil(Object(Closure), Object(Zend\Mvc\MvcEvent))</pre></div><div style="white-space:nowrap">8 /var/www/html/public/index.php <span class="badge">19</span></div><div style="margin-left:8em;margin-top:1px;margin-bottom:5px"><pre>Zend\Mvc\Application->run()</pre></div><div style="white-space:nowrap">9 {main}</div></pre>
+            </dd>
+        </dl>
+        
+    
+    </div>
+
+
+
+<div id="footer" class="container">
+<!--     style="position:absolute; bottom: 0px;"> -->
+
+    <hr />
+    <ul class="navigation">
+    <li>
+        <a title="Page&#x20;d&#x27;accueil&#x20;du&#x20;site&#x20;de&#x20;l&#x27;Universit&#xE9;&#x20;de&#x20;Caen&#x20;Normandie" class="ucbn" href="http&#x3A;&#x2F;&#x2F;www.unicaen.fr&#x2F;">Université de Caen Normandie</a>
+    </li>
+    <li>
+        <a title="&#xC0;&#x20;propos&#x20;de&#x20;cette&#x20;application" class="apropos" href="&#x2F;apropos">À propos</a>
+    </li>
+    <li>
+        <a title="Contact&#x20;concernant&#x20;l&#x27;application" class="contact" href="&#x2F;contact">Contact</a>
+    </li>
+    <li>
+        <a title="Page&#x20;de&#x20;navigation&#x20;au&#x20;sein&#x20;de&#x20;l&#x27;application" class="plan" href="&#x2F;plan">Plan de navigation</a>
+    </li>
+    <li>
+        <a title="Mentions&#x20;l&#xE9;gales" class="ml" href="http&#x3A;&#x2F;&#x2F;www.unicaen.fr&#x2F;acces-direct&#x2F;mentions-legales&#x2F;">Mentions légales</a>
+    </li>
+    <li>
+        <a title="Vie&#x20;priv&#xE9;e" class="il" href="http&#x3A;&#x2F;&#x2F;www.unicaen.fr&#x2F;vie-privee&#x2F;">Vie privée</a>
+    </li>
+</ul></div>
+
+<a href="#" class="scrollup" title="Remonter en haut de cette page">
+    <img alt="Remonter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhMWE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5pDoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAepJREFUeNrcmbFKw0AYx39WKAgOQXAS5AQf4EAQuhWfoIPQZ/ANBEEq+ACFTk43CFJxKIU+hSAtguAgBF2cSganDnIuFwnBhtzljFf/8E1JLr98X+7j7n9ruGsX6AIHwD4ggXVz7ROYATFwD9wCb9SgLeACeAS0ZTyaZ7d+A2wTOAM+HMDy8WHG2vQFdwy8ewDLx7sZ21nrQP8XwPLRz/y7pbUBjGuAS2Ns3lk6c3XCZSFLZbL/B3DZcheq+4dwaXSLetw8AMD5sl45CAAujUEebgdYBAS4MEw0DOAJ0CQcNQ3Td1t5DSh7abymbecwQLg0DhvAkY+aSCmJ4xitNUopoijyMewRwLDql0opdZIkOqvpdKqjKKqawSHAk284j5BPVGnORXCeIOe49r8ycB4gF06ANnAVIRfWJRZCLIVTShXCj0YjpxJbTZJer7cUrkyGXSbJnc1DnU6nEK4IMo5jW8A7gFPbf1ApVQj3E2SSJFpKaQt4CtBymcVCCC2EKHVvu912bTOt4BcLDWNTXBOebgxb2AvWlVnyr8SmKfhtZwilHvwL6yM1jyY1wk1szKNsJq9qgLtysd9WwsDMW8DnHi3gc58WcFbbxgh32Wg9A5dmjNJaqwC798MxRFYz4AV4MMcQsctLvgYA2It91Klq2nkAAAAASUVORK5CYII="/>
+</a>
+
+<!-- Scripts -->
+<script type="text&#x2F;javascript" src="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;bootstrap-3.3.5&#x2F;js&#x2F;bootstrap.min.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;js&#x2F;app.js&#x3F;v&#x3D;2.0.3"></script>
+<script type="text&#x2F;javascript" src="&#x2F;unicaen&#x2F;app&#x2F;js&#x2F;util.js&#x3F;v&#x3D;2.0.3"></script>
+<script type="text&#x2F;javascript" src="&#x2F;unicaen&#x2F;app&#x2F;js&#x2F;unicaen.js&#x3F;v&#x3D;2.0.3"></script>
+<script type="text&#x2F;javascript" src="https&#x3A;&#x2F;&#x2F;gest.unicaen.fr&#x2F;public&#x2F;jquery.form-3.51.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;js&#x2F;tinymce&#x2F;js&#x2F;tinymce&#x2F;tinymce.js&#x3F;v&#x3D;2.0.3"></script>
+<script type="text&#x2F;javascript" src="&#x2F;js&#x2F;form_fiche.js&#x3F;v&#x3D;2.0.3"></script>
+<script type="text&#x2F;javascript" src="&#x2F;vendor&#x2F;fontawesome-free-5.11.2-web&#x2F;js&#x2F;all.js&#x3F;v&#x3D;2.0.3"></script>
+<script type="text&#x2F;javascript" src="&#x2F;vendor&#x2F;bootstrap-select-1.13.2&#x2F;dist&#x2F;js&#x2F;bootstrap-select.min.js&#x3F;v&#x3D;2.0.3"></script>
+<script type="text&#x2F;javascript">
+    //<!--
+    $(function() {
+    $("#user-current-info").popover({ html: true, container: '#navbar' });
+});
+    //-->
+</script>
+</body>
+</html>
+
+<style>
+    a:focus, a:hover {
+        text-decoration: none;
+    }
+
+    /*div#contenu-principal{*/
+    /*    padding-top: 4rem;*/
+    /*}*/
+</style>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>

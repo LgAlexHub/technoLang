@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Organisation Selection</title> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Home Organisation, Discovery Service, WAYF, Shibboleth, Login, AAI">
+	<meta name="description" content="Choose your home organisation to authenticate">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="/index.php/styles.css" type="text/css">
+	<link rel="stylesheet" href="/index.php/ImprovedDropDown.css" type="text/css">
+	<script type="text/javascript" src="https://ent-wayf.normandie-univ.fr//js/jquery.js"></script>
+	<script type="text/javascript" src="https://ent-wayf.normandie-univ.fr//js/improvedDropDown.js"></script>
+	<script type="text/javascript">
+	<!--
+	
+	// Prevent that WAYF is loaded in an IFRAME
+	function preventIframeEmbedding(){
+		if (top != self) {
+			top.location = self.location;
+		}
+	}
+	
+	// Set focus to submit button or drop down list
+	function setFocus(){
+		// Skip this if we cannot access the form elements
+		if (
+			!document.IdPList || 
+			!document.IdPList.Select
+			){
+			return;
+		}
+		
+		if (
+				document.IdPList.user_idp && 
+				document.IdPList.user_idp.selectedIndex == 0
+			){
+			// Set focus to select
+			document.IdPList.user_idp.focus();
+		} else {
+			// Set focus to submit button
+			document.IdPList.Select.focus();
+		}
+	}
+	
+	// Perform input validation on WAYF form
+	function checkForm(){
+		if(
+			document.IdPList.user_idp && 
+			document.IdPList.user_idp.selectedIndex == 0
+		){
+			alert(unescape('You must select an organisation.'));
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	// Init WAYF
+	function init(){
+		preventIframeEmbedding();
+		
+		setFocus();
+		
+		if (true){
+			
+			var searchText = 'Enter the name of the organisation you are affiliated with...';
+			$("#userIdPSelection:enabled option[value='-']").text(searchText);
+			
+			// Convert select element into improved drop down list
+			$("#userIdPSelection:enabled").improveDropDown({
+				iconPath:'https://ent-wayf.normandie-univ.fr//images/drop_icon.png',
+				noMatchesText: 'No organisation found for this search text',
+				noItemsText: 'No organisation available',
+				disableRemoteLogos: false			});
+		}
+	}
+	
+	// Call init function when DOM is ready
+	$(document).ready(init);
+	
+	-->
+	</script>
+</head>
+
+<body>
+
+<div id="container">
+	<div class="box">
+		<div id="header">
+									<a href="http://www.normandie-univ.fr"><img src="/images/logo-nu.png" alt="Organization Logo" id="organisationLogo"></a>
+					</div>
+
+			<div id="entManual" class="box">
+				<h3>Bienvenue sur votre ENT (Espace Num&eacute;rique de Travail)</h3>
+				<p>Cet ENT est maintenu par la ComUE Normandie Universit&eacute;
+				et a &eacute;t&eacute; d&eacute;velopp&eacute; par l'UNR-RUNN 
+				<small>(Universit&eacute; Num&eacute;rique en Région - R&eacute;seau Universitaire Num&eacute;rique Normand) </small>
+				.</p>
+				<p>Plus d'infos sur : <a href="http://www.normandie-univ.fr/l-historique-31593.kjsp" target="_blank" id="footerLink">www.normandie-univ.fr</a></p>
+				<p>Si vous observez un comportement étrange du site, un probl&egrave;me de connexion :
+				<br>Contactez <a href="/contacts.html">l'assistance de votre &eacute;tablissement</a>.</p>
+                        </div>
+
+			<div id="content">
+				<ul class="menu">
+																								</ul>
+<!-- Body: Start -->
+
+<!-- Identity Provider Selection: Start -->
+<h1>Select your organisation</h1> 
+<form id="IdPList" name="IdPList" method="post" onSubmit="return checkForm()" action="/index.php?entityID=https%3A%2F%2Fdummy.normandie-univ.fr%2Fsp&amp;return=https%3A%2F%2Fwayf.normandie-univ.fr%2FShibboleth.sso%2FLogin%3FSAMLDS%3D1%26target%3Dss%253Amem%253Aecdb1772ac86431489dbc54a44ae7b956090791795387ec413167f9e014af14e">
+	<div id="userInputArea">
+		<p class="promptMessage"></p>
+		<div style="text-align: center">
+			<select name="user_idp" id="userIdPSelection"> 
+				<option value="-" selected="selected">Select the organisation you are affiliated with. ...</option>
+			
+<optgroup label="Etablissements membres de Normandie Université">
+	<option value="https://idp.rouen.archi.fr/idp/shibboleth" data="archi.fr Ecole Nationale Supérieure d’Architecture de Normandie Ecole Nationale Supérieure d’Architecture de Normandie" logo="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD///8AoHRGANrJuwD8/PsAyrCYAP3+/gD+/v4A//7+AEIRAQCETQsAgEcAAIFHAAC/oYQA593WAP///gD9/f4ApXxTAP79/gD+/v0AlntyAJhpNgCASAAAgUgAAIRLDACCSAAA/f38APPv6wBAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABg4GGgoYCwAGDgAAAAAAAAYOGQsCBgYAAA4AAAAAAAAGBgoCBgYGBgYGAAAAAAAADgYLBgYGBgYGEgAAAAAAAAYGCwYKFgsLCwAAAAAAAAAGBhsGAwYDBhsAAAAAAAAABgYbBhUXCgYbAAAAAAAAAAYGGwYKBBUGGwAAAAAAAAAGBhsHCQsLBhsAAAAAAAAAAAIIAgYNBgIbBQAAAAAAAAIbAhsbDBsbAgYAAAAAAAATBgYGCwsLDwYGAAAAAAAABgYOBgIRBgYGBgAAAAAAAA4OBgUUChAGBg4AAAAAAAAGBg4OBgUKBQYOAAAAAAAABgYGBgYGDAEGBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=">Ecole Nationale Supérieure d’Architecture de Normandie</option>
+	<option value="https://shibboleth.ensicaen.fr/idp/shibboleth" data="ensicaen.fr ENSICAEN ENSICAEN" logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABCFBMVEUAFFIAdbUYRXMAqtZSnr0AUZwAjrUAKFp7qsYAZaWlvs4AgrUANGNCbYwAjtYIMFoASYwAbbXGy9YAIFK1vs4AgsYAos4AWYwAXZwAba0QMFoAecacssatw9Z7lq0ALGMAZa0AUZQAIFoAis4Amt4AHFIAfb1ars4AWZxKlr0ALFqErs4AirUAls4AMGMATZQAcb21w84Ags4AVZQAYa0QMGMAGFIAebUARYRSosYAVZwAjsaErsYAaaWUvtYAhrUAOGtKbYwAktYATYwAcbW9z94AJFIAntYAYaUAca0YMFoAfcacts61w9aUnrUAaa0AJFoAot5jstYILFoIMGO9w84Ahs4AWZRhldOjAAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAQAAAAEABcxq3DAAAAxUlEQVQY01WP2w7BUBBFp25TNAZtKMrRRtCENERDUEXqcgjihf//E6MJIbPOetjZOZmBk/8/wO/LW6D59MHXWCBIe4OEDBGB0AgdfV0NZHRr9z0CcmCTSg6nigyOT29GgNed6g4O2zAKTA58QKO5dMP8olB4NErtOTeM3IoDRcpa1rRndQ6sVS/Mx3/07SI3Lpbaq2S6UmbNp+1xY2QtU5V7Z7sYn5VJmhvl1iaB+h6RoXUdhO4gCd5WsAR9josnFvxcHusFvMopDOdNWeIAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTUtMDctMjBUMTA6NDg6MzgrMDI6MDCGmuCMAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE1LTA3LTIwVDEwOjQ4OjM4KzAyOjAw98dYMAAAAABJRU5ErkJggg==">ENSICAEN</option>
+	<option value="https://shib.univ-lehavre.fr/idp/shibboleth" data="univ-lehavre.fr Identity Provider of University of Le Havre Université du Havre" logo="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAXn/QACJPvgD///8AMDAwAFlZWQD6+voAMDAxAJSUlADLy8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzMzM4MzMzMzMzMjQzMzMzMzMiNkk0MzMzRDNCMzMzMzQzQzIzMzMzNDNDMjMzUzdDM0MxMzMzMzIzMzMzMzMzMzMzMzMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA">Identity Provider of University of Le Havre</option>
+	<option value="https://shibboleth.insa-rouen.fr/idp/shibboleth" data="insa-rouen.fr INSA de Rouen INSA de Rouen" logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAQAAAAEABcxq3DAAABaUlEQVQoz92SyytEcRzFz+/6XeMRRs2DHQtpIhYiC1KKDWmKnZS9NKX8B4rsUSws2MjKe5aSx4KFjcewIDUznnPnjnn43d+9v68FKXY2Fs76fOqc02FEhN9I+5X77wClIARsCcsCgFwOACUNFY99uoSAbVtSAgARic31BJAeCyUAubf7AojtjQSQALJTE+rp6RlQvd19/QNEpAFgLpdW7WduNwHO5blW7ZfhHR7sKb2O8M4u5+KMN9WLu9tgext96+Ao3tUhw1vIpgpHQ07kLFVTi0zaOtjPHxq2/ZV1afMH4PDmFpXNgetOLFaysuaanswMBtVVRMzP2adHVbatfQAkhLp5UGaS8jhvaVXRlH1ybDY0WgszBT39anGpbHa+aGS8eHUZACMiSEm5LLjONAauU/qVucvp8Z4x7TAaV9Jiit6E8Hg9jYEABwBdZ3rZVzTmLgfAfBUAvIZpGG+MaR6f92NW9g++9A7Bdq8oKAVBaAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNS0wNy0yMFQxMDo0OTowNCswMjowMCB35iUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTUtMDctMjBUMTA6NDk6MDQrMDI6MDBRKl6ZAAAAAElFTkSuQmCC">INSA de Rouen</option>
+	<option value="https://idp.normandie-univ.fr/idp/shibboleth" data="normandie-univ.fr Normandie Université Normandie Université" logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACsQAAArEBUjaMygAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGaSURBVDiNpZK/S1tRFMc/596YpNE4KPijxEmpUHQo6lJwEAfBwS0ioXtDJ3UqrVCHquCfUFyEQDDSoVNRQRBsh9JFoWL9A6SkUIoGiybe0+G9xpc8TAXP9M73e8/nfs/jwj1Lgo0W0i2X5aaOoBZrKhdlerPUEFDKz4wLugKM3HJs36lkk5n8t5DjD28BtnFYLTqrA8npzZ9B1YC++f8wgHSYa5utVyMCT6p3wAZG16puBSvWLKE65AnuaQgAtNyk1I/PX7eXQF8CZ1B59e7t+WfAB0h7OjX3IBq/WAbpR3U9El5VVxFGvW/7o96Oxi6mQGY9noyZGteIYojf9CZOqGq0uAHd8Wj8ds58qT8uTveAspeI7RAuMVOYsM72Jq6iqdZM/hilEtinNZEpvK9Y1yXXkZ7mzMaCoMnA/JXUE5/1ZQsKab91wBFw6YXEOHgsEPP9g/BPRHKg/wAGGKjmofbtq2ou9IAOf339Ptg2jMCoD7itPpz2dM+HVqiu0vuizxk3aVQfBnWH/MHIp0cnnbuLLLoGF9yt/gImbHwa4w84VgAAAABJRU5ErkJggg==">Normandie Université</option>
+	<option value="https://idp3.unicaen.fr/idp/shibboleth" data="unicaen.fr University of Caen Normandie Université de Caen Normandie" logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAATpJREFUOI2dk7uOwjAQRY/H4SGtAAEiBUpBB/z/H/AZIBqgwAUpEoSQjD1brEBLEhaxV3Iz9j0aj6/NarXaAX3+pyIBRsBXdUdViTEiIogIqtoESBLgVq3ejdPplNFoRLvdZrvdUhQFIvL76C1pMnc6HZbLJQDOOc7nM9frtWr+aaFaMMYwn8+5XC6s12tUFWPMY1X1hAwhkKYprVaLzWYDgLUWEWk01wDGGHq9Hsfj8TGHd3q6gohwOBzw3mOtfWuudaCqZFnGeDwmhPA5IMaIqjKZTIgxfg4wxuCco9/vMxwO8d6/ClAzQEQoy5LdbsdisSBNU4wxhBBegmo5sNY+BjmbzciyDO89+/2esixrL1MD3CHOOU6nE4PBgG63i/e+MQvJXxBVJc9zVPVVmJIEyGn4UHe9CVPxDUVshznQDe0fAAAAAElFTkSuQmCC">University of Caen Normandie</option>
+	<option value="urn:mace:cru.fr:federation:univ-rouen.fr" data="univ-rouen.fr Université de Rouen Université de Rouen" logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAJdnBBZwAAABAAAAAQAFzGrcMAAADfSURBVCjPhdHBKoRhFMbxn7eRRlJjQSlkY2+lWbkFG9aWcgGuQCkLxQXIxk5cwqxcABbExo5mYmH0NZPGsZivb3w0PGdxek//97xPz8uuc1XsCyG8WMaqTGg7SHZMCQPFt9OE7WTUXxpL/lHl1yR8gsy9dwuVIRebtjR0zA4D7tyChwEwUvSEMGfTjJsB0Mp7V4ZJR9bQI1ybxopnIZypou4tD07oWEey4dieRYokcyBcWvphsgD6HuounGhoqpp3pVkOpl89rx49aamXN2TGQVJTQ7v01EdyKBv6EV2nX1OIUOUJ197xAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTA3LTIwVDEwOjUwOjA1KzAyOjAwu5sZmwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wNy0yMFQxMDo1MDowNSswMjowMMrGoScAAAAASUVORK5CYII=">Université de Rouen</option>
+</optgroup>
+<optgroup label="Partenaires/associés de Normandie Université">
+	<option value="https://janus.cnrs.fr/idp" data="cnrs.fr CNRS CNRS" logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAQAAAAEABcxq3DAAAC1klEQVQ4y4WTaUjTARjGf/+5NaduqzXLWK5a1+yge2W3SZeQMfpUEF2mFB1QBBFZUQRddNIlFEIRVtBh9MGi0o6PLpOif5uFdijZGrbSTf/b3j5YRgf0fHo/PM/z4eX3KPxDq3aXnKyofjmvLRYzO3vZ6hdNH3+1eMWCg/xPe85fP4UyWnDmCVNXCrOKhOmrhcFeITNPio5cuvNnRvl5OPI3qB/Kbw5l0gwwGUGvhyQ9GPSdtngCAu/hU5C3deX5TrvlFoAOYOPRC2c+3K0Yyrgp0PgJPgbhWwQlkaDb1zZo/AwJQZdph3FZOJ2Lyh+8eL0cABExYugrq/aXiki7SPtXYetZoSog3H8hFB4SaQmLiMiwktuiVKrCkesCbgFIqg2Zzqu+plHXLhTTI3Ua6Y7eZCzOw3/jHp5Xdbybl8uuXqnoczbT7J1J8o7jxPyvwGhj3c7tVl2N/+0Ie7ab2uo66GFl3Zq9ALhSjAxITgCg2tMwKVHMz/1oWwphRBbYTVTWBGbp0oz6b8HmEFazCcdYN47cbACaox1dnw4rCu29baRUPCTpWCmsXQoGAx1tEaNuxoTh1TTUMyV7DAD+s8UEQl+Ia/HOtBbHo+jRPgYJeuej5Xgg0gFaB067tUE3e+qYO7S2Mq1wF/V3S8jdd45HBbuxqWpnweUbFJ24AslG4r5axNkXdhwA3zu8c7Kv/uBgpOB2QWMIMtIh2cCQYS48bgcXL1WBzQw9LRCJQqgFUk1Q44fWJ4oOYPaKhfdRVXD1AasJknQQj3V2mwyQ1g2iUSAB3c3wxMem/esP/0YiZAiusWBJg5gwJKs/nuH9uFhWBelmfkADzwLgcsCzy0oXiQDhcIObNw+gJQwx7VdvJAKaBtF2eOwDa0pX+C+JiBtcAplimbhE3N6NwsB8wTJZYIAsKz5R+d9FAuw9VbZlYE7B03TP4qZBc4vUgm3HTouI9V/e77ShIdcL4sPwAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE1LTA3LTIwVDEwOjQ4OjE2KzAyOjAwlICcrAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNS0wNy0yMFQxMDo0ODoxNiswMjowMOXdJBAAAAAASUVORK5CYII=">CNRS</option>
+	<option value="https://idp.criann.fr/saml2/idp/metadata.php" data="criann.fr CRIANN CRIANN" logo="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAQAAAAEABcxq3DAAABT0lEQVQ4y2P8//8/A15w9boVw4ePoljltDVPMhI0ICF775N9B5ywScksnxvAxEAhYMEq+ueBMsP/P2wMDAwMDLkuy2WijfcgvPRF9EnfzEL8BrwJ2/X7+wMlBgYGBgYhKIYCVoaOKmSllHvhOcMv7U0Mr5JhAvoMvCctSDHgFcMvlYzOBrifustr5sAMYGXne8/AonkNRYegxBMZa8vDDAwMDAz8/G9Z8BrPanBuwos1F86+YjBAEo1nSPH6xcDAwFAvy/APvwEMDAwnXzIYrl65Cms6yNMNm4zdAGapJ6ycDAwMzOLPGRgYpPCGAbrA4u2bbJg8Jx1mYGC4qcbAeZ1kAy5duqRRfOmSBgMDA0N0VPReBgZH/LEgxcB2bW15ayU2SUkGjoeTbjKk4DVAlIHtdhCDeAcuBZMY8BtAMDdee89g9fEXA9bsrC3IcBIA1PliFBHj7mMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTUtMDctMjBUMTA6NDg6MTcrMDI6MDAy95cYAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE1LTA3LTIwVDEwOjQ4OjE3KzAyOjAwQ6ovpAAAAABJRU5ErkJggg==">CRIANN</option>
+</optgroup>			</select>
+			<input type="submit" name="Select" accesskey="s" value="Select"> 
+		</div>
+		<div  style="text-align: left">
+			<p class="selectOptions">
+				<input type="checkbox"  name="session" id="rememberForSession" value="true">
+				<label for="rememberForSession">Remember selection for this web browser session.</label><br>
+							</p>
+		</div>
+	</div>
+</form>
+
+<!-- Identity Provider Selection: End -->
+	
+	<!-- Body: End -->
+		</div>
+<br>
+<div id="logos">
+<a href="#" onclick="document.IdPList.user_idp.value='https://idp.rouen.archi.fr/idp/shibboleth'; document.IdPList.submit();"><img src="/images/logos/logo-ensan.png" alt="ENSAN" border="0"/></a>
+
+<a href="#" onclick="document.IdPList.user_idp.value='https://shibboleth.ensicaen.fr/idp/shibboleth'; document.IdPList.submit();"><img src="/images/logos/logo-ensicaen.png" alt="ENSICAEN" border="0"/></a>
+
+<a href="#" onclick="document.IdPList.user_idp.value='https://shibboleth.insa-rouen.fr/idp/shibboleth'; document.IdPList.submit();"><img src="/images/logos/logo-insa-rouen.png" alt="INSA Rouen" border="0"/></a>
+
+<a href="#" onclick="document.IdPList.user_idp.value='https://idp3.unicaen.fr/idp/shibboleth'; document.IdPList.submit();"><img src="/images/logos/logo-unicaen.png" alt="Université de Caen Normandie" border="0"/></a>
+
+<a href="#" onclick="document.IdPList.user_idp.value='https://shib.univ-lehavre.fr/idp/shibboleth'; document.IdPList.submit();"><img src="/images/logos/logo-univ-havre.png" alt="Université du Havre" border="0"/></a>
+
+<a href="#" onclick="document.IdPList.user_idp.value='urn:mace:cru.fr:federation:univ-rouen.fr'; document.IdPList.submit();"><img src="/images/logos/logo-univ-rouen.png" alt="Université de Rouen" border="0"/></a>
+
+<a href="#" onclick="document.IdPList.user_idp.value='https://idp.normandie-univ.fr/idp/shibboleth'; document.IdPList.submit();"><img src="/images/logos/logo-nu.png" alt="Normandie Université" border="0"/></a>
+</div>
+
+<p>
+<span class="bold"><a href="Normandie_Universite_-_Charte_SI.pdf">Charte de la s&eacute;curit&eacute; des syst&egrave;mes d'information de Normandie Universit&eacute;</a></span>
+</p>
+	</div>
+
+</div>
+</body>
+</html>

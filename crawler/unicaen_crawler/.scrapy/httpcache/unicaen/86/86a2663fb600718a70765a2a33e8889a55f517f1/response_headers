@@ -1,0 +1,8 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 14:53:06 GMT
+Content-Type: text/html
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Encoding: gzip

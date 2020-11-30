@@ -1,0 +1,6 @@
+Content-Security-Policy: frame-ancestors 'self' *.career-inspiration.com <http://career-inspiration.com> *.pathmotion.com <http://pathmotion.com>;
+Content-Type: text/html
+Date: Thu, 26 Nov 2020 15:37:37 GMT
+Location: https://www.devenirenseignant.gouv.fr/robots.txt
+Server: nginx
+X-Frame-Options: deny

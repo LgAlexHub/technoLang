@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+
+  <style type="text/css">
+    body{
+    background: url(https://ent.normandie-univ.fr/static/errors/503/logo_fond2.png) no-repeat top center;
+    }
+    #travaux{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:364px;
+    height:450px;
+    margin-top: -225px;
+    margin-left: -182px;
+    }
+    #travaux img {
+    width:364px;
+    height:449px;
+    }
+    #travaux p {
+    position:relative;
+    text-align :center;
+    top: -100px
+    }
+    #travaux a{
+    text-decoration:none;		
+    color:red;
+    }
+    #travaux a:hover{
+    text-decoration:underline;
+    }
+  </style>
+  <title>ent.normandie-univ.fr indisponible</title>
+  </head>
+  <body>
+     <div id="travaux">
+      <img src="https://ent.normandie-univ.fr/static/errors/404/404.png" alt="ent.normandie-univ.fr : erreur 404" />
+      <p>Cette page n'existe pas<br /><br />Accéder à l'ENT : <a href="https://ent.normandie-univ.fr"><b>ent.normandie-univ.fr</b></a></p>
+     </div> 
+  </body>
+</html>

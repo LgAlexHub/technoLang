@@ -1,0 +1,3 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:51:54 GMT
+Location: http://wayf.normandie-univ.fr/WAYF.php?entityID=https%3A%2F%2Fent.normandie-univ.fr&return=https%3A%2F%2Fent.normandie-univ.fr%2FShibboleth.sso%2FWAYF%3FSAMLDS%3D1%26target%3Dcookie%253A2d4efc5b

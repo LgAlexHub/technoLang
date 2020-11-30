@@ -1,0 +1,8 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:08:53 GMT
+Content-Type: text/html; charset=UTF-8
+Link: <https://nimh.unicaen.fr/wp-json/>; rel="https://api.w.org/"
+Link: <https://nimh.unicaen.fr/wp-json/wp/v2/pages/287>; rel="alternate"; type="application/json"
+Link: <https://nimh.unicaen.fr/>; rel=shortlink
+Vary: Accept-Encoding
+Content-Encoding: gzip

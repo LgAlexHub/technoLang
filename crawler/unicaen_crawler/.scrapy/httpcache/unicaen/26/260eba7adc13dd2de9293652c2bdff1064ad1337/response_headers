@@ -1,0 +1,8 @@
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+Content-Type: text/html;charset=UTF-8
+Content-Language: en
+Date: Tue, 06 Oct 2020 14:52:16 GMT

@@ -1,0 +1,5 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 16:17:43 GMT
+Content-Type: text/html; charset=iso-8859-1
+Location: http://www.unicaen.fr/mrsh/bibagri2/
+X-Content-Type-Options: nosniff

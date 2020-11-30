@@ -1,0 +1,7 @@
+Server: nginx
+Date: Tue, 06 Oct 2020 14:50:55 GMT
+X-Frame-Options: SAMEORIGIN
+Expires: Thu, 5 Nov 2020 15:50:55 GMT
+Cache-Control: public, max-age=2595600
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip

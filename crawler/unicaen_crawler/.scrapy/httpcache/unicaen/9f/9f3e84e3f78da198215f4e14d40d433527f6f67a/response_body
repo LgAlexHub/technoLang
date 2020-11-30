@@ -1,0 +1,4 @@
+sitemap: https://catalogue.unicaen.fr/view/scholar/siteindex.xml
+
+User-agent: *
+Allow: /

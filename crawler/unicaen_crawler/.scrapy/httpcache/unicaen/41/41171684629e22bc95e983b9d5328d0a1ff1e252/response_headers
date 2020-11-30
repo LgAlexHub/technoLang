@@ -1,0 +1,10 @@
+Cache-Control: no-cache, no-store, max-age=0
+Content-Encoding: gzip
+Content-Type: text/plain;charset=utf-8
+Date: Thu, 26 Nov 2020 15:34:00 GMT
+Server: tsa_f
+Set-Cookie: personalization_id="v1_DpHGT4jHXk1jxy33zmHuqQ=="; Max-Age=63072000; Expires=Sat, 26 Nov 2022 15:34:00 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Set-Cookie: guest_id=v1%3A160640484031124997; Max-Age=63072000; Expires=Sat, 26 Nov 2022 15:34:00 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+Strict-Transport-Security: max-age=631138519
+X-Connection-Hash: 00e626b6f0af4a5d86075b4ad511fb12
+X-Response-Time: 109

@@ -1,0 +1,11 @@
+Date: Thu, 26 Nov 2020 15:40:32 GMT
+Content-Type: text/plain; charset=utf-8
+Set-Cookie: __cfduid=d400a5b47baaff5f27ca0c03c798511bf1606405232; expires=Sat, 26-Dec-20 15:40:32 GMT; path=/; domain=.lewebpedagogique.com; HttpOnly; SameSite=Lax
+Location: https://lewebpedagogique.com:443/robots.txt
+Cf-Cache-Status: BYPASS
+Cf-Request-Id: 06a6cfae560000332403935000000001
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=sG7d6l56qILTGjmdFCsgkTF%2BYGKnTrlwC6bFIVM3IbWE%2FFXL4GZXxFLzezsU%2FI2pvvCdrbrdCHplqKXMAtoAEjVjBnRn11tCyIc6xvOvzOvMrsXGZg%3D%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+Cf-Ray: 5f84b55d5e803324-CDG

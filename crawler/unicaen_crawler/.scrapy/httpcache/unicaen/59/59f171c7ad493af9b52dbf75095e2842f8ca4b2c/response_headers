@@ -1,0 +1,5 @@
+Date: Tue, 06 Oct 2020 14:50:53 GMT
+Server: Apache
+Set-Cookie: JSESSIONID=32F9B2655107DCC74E3BD08742CDB611; Path=/idp/; Secure; HttpOnly
+Cache-Control: no-store
+Location: /idp/profile/Shibboleth/SSO;jsessionid=32F9B2655107DCC74E3BD08742CDB611?execution=e1s1

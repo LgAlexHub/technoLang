@@ -1,0 +1,18 @@
+Date: Thu, 26 Nov 2020 15:32:01 GMT
+Content-Type: text/plain; charset=utf-8
+Vary: Accept-Encoding
+Etag: W/"477a7970d7823df25e8185db8bc1dab6"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 754febc2ddfb088c3ddfaacb9701760f
+X-Protected-By: Sqreen
+X-Runtime: 0.055629
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: sameorigin
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin
+Content-Security-Policy: default-src * 'unsafe-eval' 'unsafe-inline' data: blob:; script-src * 'unsafe-inline' blob:; report-uri https://content-security-policy.jobteaser.com/report
+Content-Security-Policy-Report-Only: default-src * 'unsafe-eval' 'unsafe-inline' data: blob:; plugin-types application/x-shockwave-flash; script-src * 'unsafe-inline' blob:; report-uri https://content-security-policy.jobteaser.com/report
+Content-Encoding: gzip

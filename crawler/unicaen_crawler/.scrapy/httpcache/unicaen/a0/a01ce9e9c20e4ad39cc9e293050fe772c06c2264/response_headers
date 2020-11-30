@@ -1,0 +1,11 @@
+Server: nginx/1.10.3
+Date: Tue, 06 Oct 2020 14:50:57 GMT
+Content-Type: text/html; charset=UTF-8
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=61cm76a5usdf4dbe8jmnl3sn6c; expires=Tue, 06-Oct-2020 22:50:57 GMT; Max-Age=28800; path=/
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains

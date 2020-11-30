@@ -1,0 +1,23 @@
+Content-Encoding: gzip
+Accept-Ranges: bytes
+Cache-Control: max-age=900, public
+Cache-Tags: HIT
+Content-Language: fr
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 26 Nov 2020 15:37:54 GMT
+Etag: W/"1606143355"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Mon, 23 Nov 2020 14:55:55 GMT
+Server: nginx
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+Vary: Accept-Encoding
+X-Cache: HIT
+X-Cache-Age: 94
+X-Cache-Hits: 1
+X-Cache-Ttl: 900.000
+X-Cacheable: YES
+X-Content-Type-Options: nosniff
+X-Content-Type-Options: nosniff
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: SAMEORIGIN
+X-Ua-Compatible: IE=edge

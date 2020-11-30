@@ -1,0 +1,1 @@
+{'url': 'https://cas.unicaen.fr:443/login?service=http%3A%2F%2Finspe.unicaen.fr%2Fservlet%2Fcom.jsbsoft.jtf.core.SG%3FPROC%3DIDENTIFICATION_FRONT', 'method': 'GET', 'status': 200, 'response_url': 'https://cas.unicaen.fr:443/login?service=http%3A%2F%2Finspe.unicaen.fr%2Fservlet%2Fcom.jsbsoft.jtf.core.SG%3FPROC%3DIDENTIFICATION_FRONT', 'timestamp': 1606405196.5903623}

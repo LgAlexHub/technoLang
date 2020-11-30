@@ -1,0 +1,11 @@
+Date: Thu, 26 Nov 2020 16:22:40 GMT
+Server: Apache/2.4.25 (Debian)
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+X-Redirect-By: Moodle
+Content-Language: en
+Set-Cookie: MoodleSession=pnrc60oc6e35kvflro6anikab6; path=/
+Set-Cookie: SERVERID=leacmpus6; path=/
+Location: https://ecampus.unicaen.fr/login/index.php
+Content-Type: text/html; charset=utf-8

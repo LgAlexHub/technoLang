@@ -1,0 +1,9 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 14:52:50 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=or9q42hbalg96hibn8994e4213; path=/
+Set-Cookie: PHPSESSID=3k1d0bovlnsi3fkich8l8nuos2; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: ident0.php

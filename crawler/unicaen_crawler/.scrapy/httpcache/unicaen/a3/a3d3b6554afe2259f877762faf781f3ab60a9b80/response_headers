@@ -1,0 +1,7 @@
+Date: Tue, 06 Oct 2020 14:51:51 GMT
+Server: Apache/2.4.10 (Debian)
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Location: https://cas.unicaen.fr/login?service=https%3A%2F%2Fannuaire.unicaen.fr%2Fident0.php
+Content-Type: text/html; charset=UTF-8

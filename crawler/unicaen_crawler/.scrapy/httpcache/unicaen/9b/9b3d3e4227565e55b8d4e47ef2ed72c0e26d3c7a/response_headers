@@ -1,0 +1,15 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 16:35:11 GMT
+Content-Type: text/html;charset=UTF-8
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+Set-Cookie: TGC=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: CASPRIVACY=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: JSESSIONID=D7BC67361512649BD326AD50745A1B97; Path=/; Secure; HttpOnly
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: en

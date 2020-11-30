@@ -1,0 +1,12 @@
+Vary: Accept-Encoding
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, must-revalidate
+Expires: Fri, 27 Nov 2020 15:34:03 +0000
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=15552000; preload
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 0
+X-Frame-Options: DENY
+X-Fb-Debug: IQvBZy1uq9ZhBbzfkL17SHu/rg6T536DesT+/9txOgrQeptNQp8dzPrwkBlO62VwOp/eGT+Ly03bKmz2Fz9E0Q==
+Date: Thu, 26 Nov 2020 15:34:03 GMT

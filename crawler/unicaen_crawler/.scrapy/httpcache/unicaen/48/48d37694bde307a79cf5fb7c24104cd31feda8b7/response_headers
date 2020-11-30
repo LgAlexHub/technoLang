@@ -1,0 +1,21 @@
+Date: Thu, 26 Nov 2020 15:40:40 GMT
+Content-Type: text/plain; charset=utf-8
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Link: <https://lewebpedagogique.com/wp-json/>; rel="https://api.w.org/"
+Pragma: no-cache
+X-Powered-By: PHP/5.6.38
+X-Robots-Tag: noindex, follow
+Cf-Cache-Status: BYPASS
+Set-Cookie: PHPSESSID=19fc3c52062edfc42b77ce544099f69f; path=/
+Set-Cookie: wordpress_sec_461013772805e7ff551b5e98dde9dd02=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/wp-content/plugins; secure; httponly
+Set-Cookie: wordpress_sec_461013772805e7ff551b5e98dde9dd02=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; secure; httponly
+Set-Cookie: wordpress_logged_in_461013772805e7ff551b5e98dde9dd02=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; httponly
+Cf-Request-Id: 06a6cfc7c2000032b0c830c000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=FbXPW0B03x548a7VtDb3f4YDq%2B81BbR4sqTQnvz2znvoS8XU1soAsc%2FKeFswLhzAM7bDNx%2FxxOLjweRgAoR7TstnCZm2q4N9VXi5ZjxNss5tB576Aw%3D%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+Cf-Ray: 5f84b5860dd632b0-CDG
+Content-Encoding: gzip

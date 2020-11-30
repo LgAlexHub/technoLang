@@ -1,0 +1,5 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 14:48:24 GMT
+Content-Type: text/html
+Set-Cookie: JSESSIONID=E09854AEA58A1CAEEA83F72BE89EA1C9.webksup; Path=/
+Location: https://cas.unicaen.fr:443/login?service=http%3A%2F%2Fwww.unicaen.fr%2Fservlet%2Fcom.jsbsoft.jtf.core.SG%3FPROC%3DIDENTIFICATION_FRONT

@@ -1,0 +1,12 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:49:08 GMT
+Content-Type: text/html;charset=utf-8
+Set-Cookie: JSESSIONID=33C928FF3542D4C4DB4BF5FA0268E346; Path=/ecandidat/; Secure; HttpOnly
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Accept-Encoding
+Content-Encoding: gzip

@@ -1,0 +1,1 @@
+{'url': 'https://cas.unicaen.fr:443/status/dashboard', 'method': 'GET', 'status': 401, 'response_url': 'https://cas.unicaen.fr:443/status/dashboard', 'timestamp': 1606402345.3268769}

@@ -1,0 +1,14 @@
+Accept-Ranges: bytes
+Age: 48
+Cache-Control: max-age=900
+Content-Security-Policy: frame-ancestors 'self' *.career-inspiration.com <http://career-inspiration.com> *.pathmotion.com <http://pathmotion.com>;
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 26 Nov 2020 15:38:46 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Server: nginx
+Set-Cookie: PHPSESSID=m6rtqrnvfp2sil8os7o10l6376; path=/; HttpOnly
+X-Cache: HIT
+X-Cache-Ttl-Remaining: 851.976
+X-Frame-Options: deny
+X-Varnish-Ttl: 900.000

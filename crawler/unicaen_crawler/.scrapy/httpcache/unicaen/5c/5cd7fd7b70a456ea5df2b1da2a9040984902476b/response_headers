@@ -1,0 +1,14 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:49:23 GMT
+Content-Type: text/html; charset=UTF-8
+X-Xss-Protection: 1; mode=block
+X-Xss-Protection: 1
+X-Content-Type-Options: nosniff
+X-Content-Type-Options: nosniff
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+X-Ua-Compatible: ie=edge
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=15768000;includeSubdomains

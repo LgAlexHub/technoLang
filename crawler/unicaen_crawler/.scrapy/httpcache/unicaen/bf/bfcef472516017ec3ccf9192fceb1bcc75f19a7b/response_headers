@@ -1,0 +1,13 @@
+Accept-Ranges: bytes
+Age: 711
+Cache-Control: max-age=900
+Content-Security-Policy: frame-ancestors 'self' *.career-inspiration.com <http://career-inspiration.com> *.pathmotion.com <http://pathmotion.com>;
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 26 Nov 2020 15:37:43 GMT
+Etag: "48-5487fe36a6340"
+Last-Modified: Tue, 14 Feb 2017 16:16:37 GMT
+Server: ECAcc (paa/6F48)
+X-Cache: HIT
+X-Cache-Ttl-Remaining: 897.840
+X-Frame-Options: deny
+X-Varnish-Ttl: 900.000

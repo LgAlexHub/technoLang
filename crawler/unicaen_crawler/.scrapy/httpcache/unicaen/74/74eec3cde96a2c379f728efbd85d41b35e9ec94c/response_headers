@@ -1,0 +1,5 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:32:22 GMT
+Location: https://idp3.unicaen.fr/idp/profile/SAML2/Redirect/SSO;jsessionid=67193E69A2ED9CAD74920319DD8976ED?execution=e1s1
+Set-Cookie: JSESSIONID=67193E69A2ED9CAD74920319DD8976ED; Path=/idp/; Secure; HttpOnly
+Cache-Control: no-store

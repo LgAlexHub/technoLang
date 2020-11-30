@@ -1,0 +1,11 @@
+Server: nginx/1.10.3
+Date: Thu, 26 Nov 2020 15:31:34 GMT
+Content-Type: application/pdf
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Last-Modified: Fri, 19 Apr 2019 06:56:07 GMT
+Etag: "901c8-586dc9ceecc5a-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=15768000;includeSubdomains

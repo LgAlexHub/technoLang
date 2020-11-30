@@ -1,0 +1,9 @@
+Server: nginx
+Date: Tue, 06 Oct 2020 14:51:30 GMT
+Content-Type: text/html;charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Expires: Tue, 24 Jan 2000 20:46:50 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Pragma: no-cache
+Content-Language: en
+Location: https://webmail.unicaen.fr/public/preauth-unicaen-fr.jsp

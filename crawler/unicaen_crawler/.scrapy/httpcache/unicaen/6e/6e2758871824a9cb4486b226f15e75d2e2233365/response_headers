@@ -1,0 +1,17 @@
+Date: Thu, 26 Nov 2020 15:32:11 GMT
+Content-Type: text/html; charset=utf-8
+Location: https://unicaen.jobteaser.com/users/auth/unicaen_shibboleth
+Cache-Control: no-cache
+Set-Cookie: jobteaser_session=09c9977d13aff9f5b613ee6a377005bc; domain=.jobteaser.com; path=/; expires=Fri, 27 Nov 2020 15:32:11 -0000; secure; HttpOnly; SameSite=Lax
+X-Request-Id: d25e3ae08e2af4a8db78ccd650a2276b
+X-Protected-By: Sqreen
+X-Runtime: 0.060524
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Frame-Options: sameorigin
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: origin-when-cross-origin
+Content-Security-Policy: default-src * 'unsafe-eval' 'unsafe-inline' data: blob:; script-src * 'unsafe-inline' blob:; report-uri https://content-security-policy.jobteaser.com/report
+Content-Security-Policy-Report-Only: default-src * 'unsafe-eval' 'unsafe-inline' data: blob:; plugin-types application/x-shockwave-flash; script-src * 'unsafe-inline' blob:; report-uri https://content-security-policy.jobteaser.com/report

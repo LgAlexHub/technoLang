@@ -1,0 +1,237 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Login - CAS &#8211; Central Authentication Service</title>
+    <meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="stylesheet" href="/webjars/font-awesome/5.0.13/web-fonts-with-css/css/fontawesome-all.min.css"/><link type="text/css" rel="stylesheet" href="/webjars/lato/0.3.0/css/lato.min.css"/><link rel="stylesheet" href="/css/cas.css"/><link rel="icon" href="/favicon.ico" type="image/x-icon"/><script type="text/javascript" src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/></head>
+
+<body class="login">
+<header role="banner">
+        <nav class="navbar navbar-expand-md fixed-top">
+        <img src="/images/cas-logo.png" width="220px" height="80px" alt="Unicaen" /></nav>
+    </header>
+
+<main role="main" class="container mt-3 mb-3">
+    <div id="content" class="row">
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Login</h2>
+                    <span class="fa-stack fa-2x hidden-xs">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="card-body">
+                    <form method="post" id="fm1" action="login">
+                        <h3>Enter your Username and Password</h3>
+
+                        <section class="form-group">
+                            <label for="username"><span class="accesskey">U</span>sername:</label>
+
+                            <div>
+                                <input class="form-control required"
+                                       id="username"
+                                       size="25"
+                                       tabindex="1"
+                                       type="text"
+                                       accesskey="u"
+                                       autocomplete="off" name="username" value=""/></div>
+                        </section>
+
+                        <section class="form-group">
+                            <label for="password"><span class="accesskey">P</span>assword:</label>
+
+                            <div>
+                                <input class="form-control required"
+                                       type="password"
+                                       id="password"
+                                       size="25"
+                                       tabindex="2"
+                                       accesskey="p"
+                                       autocomplete="off" name="password" value=""/><span id="capslock-on" style="display:none;">
+                                <p>
+                                    <i class="fa fa-exclamation-circle"></i>
+                                    <span>CAPSLOCK key is turned on!</span>
+                                </p>
+                            </span>
+                            </div>
+                        </section>
+
+                        <input type="hidden" name="execution" value="15e0e1d0-9e4c-4130-99e9-21d9af1f2f7b_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuek5YcElkSE9nM29vYUVXbVJ0R2RTMjk5Y2x2ekVlSHBZeGw4ZCtkVjZ2d0I2SkVaRFNGQ1FoS0trbVhTVWk1bytDRDk0dG5Uems1dEV2b3B4Wkl2SllxdnJKbFA3R3VrU2FNR01pNGNMaUtlMjV1R0Y4L2pYSmdWQnBLL2FlbWtHUzg5b1lPOUlSYnFKNTlpNEx1dkdQVTB3cHUrV2ViQ3BwTEdPTFFtaUQxOGtIWEE4RW9maUtPV25qQklpaEczOFo0bDA2NFdoTWJRemxUWlJ0a1c4QnNCUmFyMnM0TWVJK2RWQjdqNTlOeVFYejBZMXExRTQ1NjAvVGpqeGVQS0NuSzB6alowdGVINGgycXJLREpzWlRmdmw2aWs4cU9LNzRFTEthZElET21KRlpHR0hWWUxTUm9SbTBidEhHaE91UGdoNllHdC9rbGFGRllEZUVvdktubDZiNVlaaWQwOGhHT3hWZVNwc1pjWjBwK3QwbXVJTlF0QlZYckh0dFlXWk83ZVJWUmthVjNQS3Z4NDVRdmJsdUtNekZnT2hMNmljSFphZC96QXh4T1lneE54Sk5hc0FCT1NwZkFBRmRZejBEc0lRcjZHeDJaaFlqOWV6RWl0VHc5VTgxUzdUM3Fqa3ErK2hDKy9zalJWeFNsQXpKQnJPYThsdGhHdVJpNU9YRUhLWHVOVGZlUmN0QzFVMHQrZ2t3bjc1L2hiM2ZLQmtNUUxXYUlucktsbWk5VWVjZkxXYXJBcmFoUVpCcWtzdXBlMjF3bHJnS1VKMzhTZXc3bS9jS3phdXdFdkRGdEg1NVg1Yjh3ZXJ0dFIxM1FGOWY0dGVGYi9LZ01nSHJ5djlSYkVmeWZsdEV2Y0JOY05MWG56bzd1YU9jdnJzSk9WQXBNenY4YkNRT0NEOVF6MDVvZlhIYU8yRWZCaEx6UjBhZnNVeHl5MHBocm5vMDhoU3A5RlpuYVk4NGUwRUNjRFRKQ2tCYUtONzdHRVJqWGZZKzIzWGExaDVvRlBya1ZUT2lkY2pMMU1LTXlSWDAyTGxzRk1UdW9xNjcwWnp4UGNJR0hCdFIwZ1Bocm1DUWlnRTVwakRkRFJZQTYraE9NS0RtWnpLMGd0MnNIeFI5OTM0RzJxRlhQL1Y0SUIzenVCSndKMzU3a1A4SXhkTlJhcFZ5aVBSaGFicER0MHhQWWdGS0d3TGdTc3JpR3doakZYSzh6aHJJN3RFOUE3a0kwYmtuM3NJM3lITTlJaVZSb2FYZXZxTXY2NU1jMXhuVzQzKy9UVHRZT3RJdkFEdjF5enhHUGZ6QjlBQk9rVzkyWFlsUEdKc05WMVNPR3VQeit0K3I5cXFjUkpmbzVNUWUwZExiL2puTmRWM3paTHBuMWRVZGMyd3dXRmpDYjNCVGJodGtocVVkSTRWY2x0RXdkSlZUWnB1cmZGNGpBcWJUQ25UZDlhdEx2ZEFKSWIwd1lyUWdkaDNyU1pocXFsTit5aVk2L3lCR0FwbVk2ZlpHRVFGYjQxTDlKQ1crRnhYVjQ3QzZXMlJKWjd4S01YdU80N09BZFIyakduZU8yQ1YyL1VpVzhKMDZCcU1pTWhmMzVwNzFSSWI5SzJCS05RQWpZcmp0UFBBU0dkQjhUVE5kanNjSFhuRENOT1cvbStNR2RtMnF2aW5jMUxxd2J4K0x2QXZjR2VHekZEMDI0TkJhRTVMbS9MVHVpcTUvRUFUQ2ZGeEprM0dIUEJUbVZ1ZkZIQ21XbTNlMEdaYlJPZyswdllMM1NRRVBxTk9jZ2RlUmJBUS9zOEVKeVZmT3Z4MG1jN3EzaEl1YVErRWIwRTBFQ1hUNzhCU2diaURDMFpLVjQxcnMra1AwYnk2c3lHRXYrODhDbzhsbXFxUGRXaGN1WG1YQjgyZXdJcG51aXM0bXNpZmsvY20wOTVHVlRDZ255NENZY0prK1A2RlE4bUFMZkY1Vlljd2FEMDJaTWV0M0FZRnRORjgrMjh2STJxZXZjMXNMdjdJYkR1UE1YRFhUaHYrTXI4c3dNMTBTN2hqNEtJNVhpTERRZ2lRQkpuc1ZrSUF6NXUydjAwUE5zOTZGVllJYkhtdll0UFRpRUZKTFg1WFl1cDlkSi9mdmlMblpXeFU2a0k2NFVYM05zSnVPT08xYVB3a29vQVh1Q2dvRlZOcmVpU2lwcURac0cwUTVod1d1OU9QbGQraVA1LzMxYU9yb3ZRZEtuTXBDSGhWMVZTT254aVJ3aHF3VDFBMVk0Q29yK1dZMkVSdzdSR1AvcGx5R29saHZnMUFlV2lVUkRRM1JYRFdZdUNZeVkvVVhMRWV0aW4wOEZVcGNVMy9rcjh0T0o5UlNnN2ZEMkIzSkVzQ0F0Sjd0OWlodzROdXllNDlkSjh2WkxZSEYydDdWMnRLampCa3VpelFJWGpRVEFFU2RYSnNpT2RmVGorYmNvU0QyMkJ4K0hpMC84eFExb29ob2RYMVg2Y2UyZythMHNSMTVmc0I2K2dmN015NEgvcGtJTmVTWGZ3V0JveXg5dGpLdGNPd3FkLzYrSStSY2V3bW40REJncS91eGx0eTRIbS9hODBSTlE0ZjFLOGNFa3dTa0trb0JEcS9vOTdjdXVvYUpFeG9ZVkkxd0FXVitLZXZ4dnMwL05aQlJqd1ZiVnIzK0lQSkowVzVuMXB5eCtKMjhrQVJ6cWdPeHJYR2ZPTEk4aFBvYmtsMVRldEh6aStvOE51T0hTUjAxL2luYUlYdUtXOE5RTmJub2R2OUROOHl2Slg4OERpYktkd1d5dWw3TUpxTXRERmxuMVFVKy8vTVRFMHRQQTM2KzRJNEhCWVFSK1EzNkF4eEhjSnowcWkycjlZR21jWFNOQWRsZnhtMVRQaFlVSnhYWkZGcEhGU0JNQ2hORzZDbVRac01iTUFjQllIa0UzN01DeWJHM1pLbUE3TTZTRUwzVEN2ckZGMFRVT1UxUHJBTEFOZHkySStpWmMrTkVKaTQ2d2taZjlzV05xdXAzWURFb1RzeVVXWjBGZFJlN0RXUm1pcTRsUXhZd3V0WG42NTAyOU4zZVRTNXVQZGpoeVZxYVA5QWRqd3hGRFR5S3M1anNGWXlEU0N4ZTQ5aTIzcVJCamVtZnhHVjZUbFFveXJ4NlZLQW5BNmw4WkQ2WUZSdXJBTmN6YUVXRTFmVDFYclZvbkppektjbExsTHJxemFWaWkzRk1RcTYrSzY0eG1FTExFU2FWT25RVjhNdWNJd3p3RjVycm1VNzN2Z1RBS05MemdubmhTSDl3bi9hNU8zemZVT2t1cDFwV1h5d0tUMStzWlQ4NTUxekhpVkJncFVLYVUvQmNRTWJQOFlJdHc2VWFINnB4Nk13K1dvdHRUbCtKbFpmaG5UZWVoTmpsRzl2RWpMblowTWJISExLOFZ2amo4OENOUkxLL2pvMlNCS25PMHFpYStQcDNCMzhTZzUwM0I3WFNRRnVZSWs0ZHZ5eTVkZDdxQk9wME02RWZoVHZyTGFQL052T3drd0ROT2ROT3dWbFFoUVdraWpPY3ZDUFBCNVV0ZFgrNHgzK2czMFgvbXdDK2srRldkN0lKS2k1ZlNyQlJ5b2hXZXhpYmxzMFh3WW9WMmxIMTdXRXRjcGpIaXQzT1MyM2ljN21SRjNMdmtsSXZSazZRdXF0SXluRWs2enVQd2ZEbE1NUUtUMU05RHVlN1kzcmJlVTNZK0E4bW9HeE5WOWl1T0J0RFltWVFHWmZUb1lBeGJWM2RpU2V6cjFwVDI4SjNsZUY4UC92WUxGZEg4WnVoOFZSdGd4SG8zZFZKVzNMVGtFdythbllNTEhmTHd0cGZVNFJLM281dDBXZlBvbmt2QlQ4SzdmOTN0ZDJwaDJ6dnBmQm80UkZRQjRsek15N2NkKzJ6MlN0T0JpVHZ4cjE5S2RISW5LaVkvWjdpVUFNY1BpT09Ha1FERVEzakdsZWNHRTY2NWpJeCtjQ0JPM2I5cG5yS2NKNFBhcTdXTDZ1WkkvRTF6QUFvY2M5RjRZbHZqSHpBeGh1MXM0SUR1Q2FBa3JpbUF6NzlvPS5uWHVnbmYwVHpROW4xaEF3TmdGZjFhaG9sVnlPMFNSQlFxTmFYVG1qSkFnbFNtNFZSZjhraDBsUDVmQlFQMEtSRWxyQU1KRGtJVXV5T1VkQnJ5c1FfQQ=="/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/><input class="btn btn-block btn-submit"
+                               name="submit"
+                               accesskey="l"
+                               tabindex="6"
+                               type="submit"
+                               value="LOGIN"
+                        /></form>
+
+                    <div>
+                        <span class="fa fa-question-circle"></span>
+                        <span><a href="https://pwd.example.org">Forgot your password? </a></span>
+                        <p/></div>
+
+                    <script type="text/javascript">
+                        var i = "One moment please..."
+                        $( document ).ready(function() {
+                            $("#fm1").submit(function () {
+                                $(":submit").attr("disabled", true);
+                                $(":submit").attr("value", i);
+                                console.log(i);
+                                return true;
+                            });
+                        });
+                    </script>
+
+                    <div id="sidebar">
+        <div class="sidebar-content">
+            <p>For security reasons, please <a href="logout">log out</a> and exit your web browser when you are done accessing services that require authentication!</p>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+        <div id="notices" class="col-md mt-3 mt-md-0">
+            <div id="cookiesDisabled" class="card" style="display: none;">
+    <div class="card-body">
+        <h5 class="card-title">Browser cookies disabled</h5>
+        <p class="card-text">Your browser does not accept cookies. Single Sign On WILL NOT WORK.</p>
+    </div>
+</div>
+            <div id="serviceui" class="alert alert-info">
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img src="images/webapp.png"/></td>
+                <td id="servicedesc">
+                    <h2>HTTPS, IMAPS et SFTP pour unicaen</h2>
+                    <p></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+            <script>
+            var redirectTo = $( "a[autoRedirect=true]" ).attr("href");
+            if (redirectTo != null && redirectTo != undefined) {
+                window.location.href = redirectTo;
+            }
+        </script>
+
+    <div id="cas-resource-list" class="card d-sm-none d-md-block">
+        <div class="card-body">
+            <h3 class="card-title">Links to CAS Resources</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="/status/dashboard">
+                        <i class="fa fa-cogs"></i>Dashboard
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="http://apereo.github.io/cas">
+                        <i class="fa fa-file"></i>Documentation
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://github.com/apereo/cas/pulls">
+                        <i class="fa fa-bug"></i>Pull Requests
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://apereo.github.io/cas/developer/Contributor-Guidelines.html">
+                        <i class="fa fa-bug"></i>Contributor Guidelines
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://apereo.github.io/cas/Mailing-Lists.html">
+                        <i class="fa fa-envelope"></i>Mailing Lists
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://gitter.im/apereo/cas">
+                        <i class="far fa-comment-alt"></i>Chatroom
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://apereo.github.io/">
+                        <i class="fa fa-rss"></i> Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer" role="contentinfo">
+        <div class="container">
+            <span id="copyright">Copyright &copy; 2005&ndash;2018 Apereo, Inc.</span>
+            <span>Powered by <a href="http://www.apereo.org/cas">
+                Apereo Central Authentication Service
+                <span>5.3.6</span>
+                <span>2018-12-07T14:02:34Z</span> </a>
+            </span>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="/webjars/zxcvbn/4.3.0/zxcvbn.js"></script>
+<script type="text/javascript" src="/webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js"></script>
+<script src="/webjars/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+<script src="/webjars/headjs/1.0.3/head.min.js"></script>
+<script src="/webjars/store.js/1.3.17/store.min.js"></script>
+<script type="text/javascript" src="/js/cas.js"></script>
+
+<script>
+head.ready(document, function () {
+    if (!window.jQuery) {
+    	var jqueryUrl = "\/webjars\/jquery\/3.3.1\/jquery.min.js"; 
+        head.load(jqueryUrl, loadjQueryUI);
+    } else {
+        notifyResourcesAreLoaded(resourceLoadedSuccessfully);
+    }
+});
+
+function loadjQueryUI() {
+	var jqueryUrl = "\/webjars\/jquery-ui\/1.12.1\/jquery-ui.min.js"; 
+	head.load(jqueryUrl, loadjQueryCookies);
+}
+
+function loadjQueryCookies() {
+	var jqueryUrl = "\/webjars\/jquery-cookie\/1.4.1-1\/jquery.cookie.js"; 
+	head.load(jqueryUrl, notifyResourcesAreLoaded(resourceLoadedSuccessfully));
+}
+
+function notifyResourcesAreLoaded(callback) {
+    if (typeof callback === "function") {
+        callback();
+    }
+}
+</script>
+
+<script>
+    /*<![CDATA[*/
+
+    var trackGeoLocation = false;
+
+    var googleAnalyticsTrackingId = null;
+
+    if (googleAnalyticsTrackingId != null && googleAnalyticsTrackingId != '') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', googleAnalyticsTrackingId, 'auto');
+        ga('send', 'pageview');
+    }
+
+    /*]]>*/
+</script>
+
+</body>
+</html>
+
